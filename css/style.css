@@ -1,54 +1,67 @@
 /* Navbar Styling Starts */
-.navbar-light .navbar-brand{
-color: black;
-text-transform: uppercase;
-font-weight: bold;
-font-size: 25px;
-letter-spacing: 2px;
+.navbar-light .navbar-brand {
+  color: #fff;
+  ;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 25px;
+  letter-spacing: 2px;
 }
 
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-  color: black; /* insert fav color*/
+.nav-link {
+  text-transform: uppercase;
 }
 
-.navbar-light .navbar-nav .nav-link{
-  color: black; /* insert fav color*/
-}
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-	color: black; /* insert fav color*/
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+  color: #fff; /* insert fav color*/
 }
 
-.nav-item{
+.navbar-light .navbar-nav .nav-link {
+  color: #fff; /* insert fav color*/
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #fff; /* insert fav color*/
+}
+
+.nav-item {
   font-size: 18px;
 }
-#collapsenav li{
-  position    : relative;
+
+#collapsenav li {
+  position: relative;
   padding-left: 10px;
 }
-.hover-effect li a::after{
-  content         : '';
-  position        : absolute;
-  bottom          : 0;
-  left            : 5px;
-  width           : 0%;
-  height          : 2px;
-  background-color: black;
-  transition      : all ease-in-out 250ms;
+
+.hover-effect li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition: all ease-in-out 250ms;
 }
-.hover-effect li a:hover::after{
+
+.hover-effect li a:hover::after {
   width: 100%;
 }
+
 /* Navbar Styling Ends */
 
 /* Carousel Styling Starts */
 
-.carousel-item{
+.carousel-item {
   height: 100vh;
   min-height: 300px;
   background: no-repeat center center scroll;
   background-size: cover;
   -webkit-background-size: cover;
-  /* filter: blur(3px); */
 }
 
 /* Carousel Styling ends */
@@ -56,9 +69,9 @@ letter-spacing: 2px;
 /* Moving Letters Styling Starts */
 .ml5 {
   position: relative;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 4.5em;
-  color: black;
+  color: #fff;
 }
 
 .ml5 .text-wrapper {
@@ -78,7 +91,7 @@ letter-spacing: 2px;
   margin: auto;
   height: 3px;
   width: 100%;
-  background-color: black;
+  background-color: #fff;
   transform-origin: 0.5 0;
 }
 
@@ -96,85 +109,9 @@ letter-spacing: 2px;
   opacity: 0;
   font-weight: 200;
 }
-.carousel-caption{
-  bottom: 150px;
-}
-.carousel-caption .slide2{
-font-weight: bold;
-font-size: 50px;
-transform: translateX(-40%);
-color: black;
-text-transform: uppercase;
 
+.carousel-caption {
+  bottom: 200px;
 }
-.carousel-caption p{
-  font-weight: 400;
-font-size: 25px;
-transform: translateX(-40%);
-color: black;
-}
+
 /* Moving Letters Styling Ends */
-
-
-
-
-
-
-/* Pre Loader Styling Starts */
-
-.spinner-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ff6347;
-  z-index: 999999;
-}
-
-.spinner {
-  width: 40px;
-  height: 40px;
-
-  position: relative;
-  /* margin: 100px auto; */
-  position: absolute;
-top: 48%;
-left: 48%;
-}
-
-.double-bounce1, .double-bounce2 {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-color: #333;
-  opacity: 0.6;
-  position: absolute;
-  top: 0;
-  left: 0;
-  
-  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
-  animation: sk-bounce 2.0s infinite ease-in-out;
-}
-
-.double-bounce2 {
-  -webkit-animation-delay: -1.0s;
-  animation-delay: -1.0s;
-}
-
-@-webkit-keyframes sk-bounce {
-  0%, 100% { -webkit-transform: scale(0.0) }
-  50% { -webkit-transform: scale(1.0) }
-}
-
-@keyframes sk-bounce {
-  0%, 100% { 
-    transform: scale(0.0);
-    -webkit-transform: scale(0.0);
-  } 50% { 
-    transform: scale(1.0);
-    -webkit-transform: scale(1.0);
-  }
-}
-
-/* Pre Loader Styling Ends */
