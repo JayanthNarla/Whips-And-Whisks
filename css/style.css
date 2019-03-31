@@ -1,3 +1,125 @@
+/* Navbar Styling Starts */
+.navbar-light .navbar-brand{
+color: black;
+text-transform: uppercase;
+font-weight: bold;
+font-size: 25px;
+letter-spacing: 2px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+  color: black; /* insert fav color*/
+}
+
+.navbar-light .navbar-nav .nav-link{
+  color: black; /* insert fav color*/
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	color: black; /* insert fav color*/
+}
+
+.nav-item{
+  font-size: 18px;
+}
+#collapsenav li{
+  position    : relative;
+  padding-left: 10px;
+}
+.hover-effect li a::after{
+  content         : '';
+  position        : absolute;
+  bottom          : 0;
+  left            : 5px;
+  width           : 0%;
+  height          : 2px;
+  background-color: black;
+  transition      : all ease-in-out 250ms;
+}
+.hover-effect li a:hover::after{
+  width: 100%;
+}
+/* Navbar Styling Ends */
+
+/* Carousel Styling Starts */
+
+.carousel-item{
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  background-size: cover;
+  -webkit-background-size: cover;
+  /* filter: blur(3px); */
+}
+
+/* Carousel Styling ends */
+
+/* Moving Letters Styling Starts */
+.ml5 {
+  position: relative;
+  font-weight: 300;
+  font-size: 4.5em;
+  color: black;
+}
+
+.ml5 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+  line-height: 1em;
+}
+
+.ml5 .line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  transform-origin: 0.5 0;
+}
+
+.ml5 .ampersand {
+  font-family: Baskerville, "EB Garamond", serif;
+  font-style: italic;
+  font-weight: 400;
+  width: 1em;
+  margin-right: -0.1em;
+  margin-left: -0.1em;
+}
+
+.ml5 .letters {
+  display: inline-block;
+  opacity: 0;
+  font-weight: 200;
+}
+.carousel-caption{
+  bottom: 150px;
+}
+.carousel-caption .slide2{
+font-weight: bold;
+font-size: 50px;
+transform: translateX(-40%);
+color: black;
+text-transform: uppercase;
+
+}
+.carousel-caption p{
+  font-weight: 400;
+font-size: 25px;
+transform: translateX(-40%);
+color: black;
+}
+/* Moving Letters Styling Ends */
+
+
+
+
+
+
 /* Pre Loader Styling Starts */
 
 .spinner-wrapper {
