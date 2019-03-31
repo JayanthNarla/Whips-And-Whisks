@@ -38,58 +38,64 @@
   <!-- Pre Loader End -->
 
   <!-- Header Starts -->
-  <!-- Navigation Starts -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="images/Brand/circle-cropped.png" width="50" height="50" class="d-inline-block align-middle"
-          alt="">&nbsp;
-        WHIPS & WHISKS</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsenav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <header>
+    <!-- Navigation Starts -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/Brand/circle-cropped.png" width="50" height="50" class="d-inline-block align-middle"
+            alt="">&nbsp;
+          WHIPS & WHISKS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsenav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="collapsenav">
-        <ul class="navbar-nav ml-auto hover-effect">
-          <li class="nav-item active">
-            <a class="nav-link text-center" href="#">Item 1 <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-center" href="#">Item 2</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-center" href="#">Item 3</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-center" href="#">Item 4</a>
-          </li>
-        </ul>
+        <div class="collapse navbar-collapse" id="collapsenav">
+          <ul class="navbar-nav ml-auto hover-effect">
+            <li class="nav-item active">
+              <a class="nav-link text-center" href="#">Item 1 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-center" href="#">Item 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-center" href="#">Item 3</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-center" href="#">Item 4</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navigation Ends -->
+    <!-- Home Text Starts -->
+    <div class="main-content">
+      <h1 class="ml5">
+        <span class="text-wrapper">
+          <span class="line line1"></span>
+          <span class="letters letters-left">WHIPS</span>
+          <span class="letters ampersand">&amp;</span>
+          <span class="letters letters-right">WHISKS</span>
+          <span class="line line2"></span>
+        </span>
+      </h1>
+      <div>
+          <h1 class="ml11">
+              <span class="text-wrapper">
+                <span class="line line1"></span>
+                <span class="letters">One Stop Cake Shop</span>
+              </span>
+            </h1>
       </div>
     </div>
-  </nav>
-  <!-- Navigation Ends -->
+    <!-- Home Text Ends -->
 
-  <!-- Carousel Starts -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100 h-100" src="images/Carousel/1.jpg" alt="First slide">
-      <div class="carousel-caption d-none d-md-block">
-        <h1 class="ml5">
-          <span class="text-wrapper">
-            <span class="line line1"></span>
-            <span class="letters letters-left">WHIPS</span>
-            <span class="letters ampersand">&amp;</span>
-            <span class="letters letters-right">WHISKS</span>
-            <span class="line line2"></span>
-          </span>
-        </h1>
-      </div>
-    </div>
-    <!-- Carousel End -->
-    <!-- Header Ends -->
+  </header>
+  <!-- Header Ends -->
 
-    <!-- Pre Loader Jquery Start -->
-    <!-- <script>
+  <!-- Pre Loader Jquery Start -->
+  <!-- <script>
     $(document).ready(function () {
       //Preloader
       $(window).on("load", function () {
@@ -103,57 +109,96 @@
       });
     });
   </script> -->
-    <!-- Pre Loader Jquery End -->
+  <!-- Pre Loader Jquery End -->
 
-    <!-- Moving Letters Script Starts -->
-    <script>
-      anime.timeline({
-          loop: true
-        })
-        .add({
-          targets: '.ml5 .line',
-          opacity: [0.5, 1],
-          scaleX: [0, 1],
-          easing: "easeInOutExpo",
-          duration: 700
-        }).add({
-          targets: '.ml5 .line',
-          duration: 600,
-          easing: "easeOutExpo",
-          translateY: function (e, i, l) {
-            var offset = -0.625 + 0.625 * 2 * i;
-            return offset + "em";
-          }
-        }).add({
-          targets: '.ml5 .ampersand',
-          opacity: [0, 1],
-          scaleY: [0.5, 1],
-          easing: "easeOutExpo",
-          duration: 600,
-          offset: '-=600'
-        }).add({
-          targets: '.ml5 .letters-left',
-          opacity: [0, 1],
-          translateX: ["0.5em", 0],
-          easing: "easeOutExpo",
-          duration: 600,
-          offset: '-=300'
-        }).add({
-          targets: '.ml5 .letters-right',
-          opacity: [0, 1],
-          translateX: ["-0.5em", 0],
-          easing: "easeOutExpo",
-          duration: 600,
-          offset: '-=600'
-        }).add({
-          targets: '.ml5',
-          opacity: 0,
-          duration: 1000,
-          easing: "easeOutExpo",
-          delay: 1000
-        });
-    </script>
-    <!-- Moving Letters Script Ends -->
+  <!-- Moving Letters Script Starts -->
+  <script>
+    // script for ml15
+    anime.timeline({
+        loop: true
+      })
+      .add({
+        targets: '.ml5 .line',
+        opacity: [0.5, 1],
+        scaleX: [0, 1],
+        easing: "easeInOutExpo",
+        duration: 700
+      }).add({
+        targets: '.ml5 .line',
+        duration: 600,
+        easing: "easeOutExpo",
+        translateY: function (e, i, l) {
+          var offset = -0.625 + 0.625 * 2 * i;
+          return offset + "em";
+        }
+      }).add({
+        targets: '.ml5 .ampersand',
+        opacity: [0, 1],
+        scaleY: [0.5, 1],
+        easing: "easeOutExpo",
+        duration: 600,
+        offset: '-=600'
+      }).add({
+        targets: '.ml5 .letters-left',
+        opacity: [0, 1],
+        translateX: ["0.5em", 0],
+        easing: "easeOutExpo",
+        duration: 600,
+        offset: '-=300'
+      }).add({
+        targets: '.ml5 .letters-right',
+        opacity: [0, 1],
+        translateX: ["-0.5em", 0],
+        easing: "easeOutExpo",
+        duration: 600,
+        offset: '-=600'
+      }).add({
+        targets: '.ml5',
+        opacity: 0,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
+      });
+  </script>
+
+  <script>
+  // script for ml11
+  $('.ml11 .letters').each(function(){
+  $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+});
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml11 .line',
+    scaleY: [0,1],
+    opacity: [0.5,1],
+    easing: "easeOutExpo",
+    duration: 700
+  })
+  .add({
+    targets: '.ml11 .line',
+    translateX: [0,$(".ml11 .letters").width()],
+    easing: "easeOutExpo",
+    duration: 700,
+    delay: 100
+  }).add({
+    targets: '.ml11 .letter',
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=775',
+    delay: function(el, i) {
+      return 34 * (i+1)
+    }
+  }).add({
+    targets: '.ml11',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+  </script>
+  <!-- Moving Letters Script Ends -->
 
 </body>
 

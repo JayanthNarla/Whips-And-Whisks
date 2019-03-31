@@ -11,7 +11,9 @@
 .nav-link {
   text-transform: uppercase;
 }
-
+.navbar-light .navbar-brand {
+  color: white !important;
+}
 .navbar-light .navbar-nav .active>.nav-link,
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.show,
@@ -54,24 +56,32 @@
 
 /* Navbar Styling Ends */
 
-/* Carousel Styling Starts */
-
-.carousel-item {
+/* Home Image Styling Starts */
+header{
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../images/Carousel/1.jpg");
   height: 100vh;
+  width: 100vw;
   min-height: 300px;
-  background: no-repeat center center scroll;
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   -webkit-background-size: cover;
 }
-
-/* Carousel Styling ends */
+/* Home Image Styling ends */
 
 /* Moving Letters Styling Starts */
 .ml5 {
   position: relative;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 4.5em;
   color: #fff;
+}
+
+.ml2{
+  font-weight: 300;
+  font-size: 3em;
+  color: #fff;
+
 }
 
 .ml5 .text-wrapper {
@@ -91,10 +101,14 @@
   margin: auto;
   height: 3px;
   width: 100%;
-  background-color: #fff;
+  background-color: #fff;;
   transform-origin: 0.5 0;
 }
-
+.main-content{
+  position: absolute;
+  top: 35%;
+  left: 5%;
+}
 .ml5 .ampersand {
   font-family: Baskerville, "EB Garamond", serif;
   font-style: italic;
@@ -107,11 +121,28 @@
 .ml5 .letters {
   display: inline-block;
   opacity: 0;
-  font-weight: 200;
 }
 
-.carousel-caption {
-  bottom: 200px;
+.ml11 {
+  font-weight: lighter;
+  font-size: 2.5em;
+  margin: 0 auto;
+}
+
+.ml11 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+  padding: 0 100px;
+}
+
+
+.ml11 .letters {
+  display: inline-block;
+  line-height: 1em;
+  color: white;
 }
 
 /* Moving Letters Styling Ends */
