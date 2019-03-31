@@ -1,13 +1,27 @@
+/* font import */
+@import url('https://fonts.googleapis.com/css?family=Asul:400,700|Cinzel:400,700,900|Cookie|Courgette|Dancing+Script:400,700|Germania+One|Kaushan+Script|Lobster|Lobster+Two:400,400i,700,700i|Merienda:400,700|Merriweather:300,300i,400,400i,700,700i,900,900i|Pacifico|Permanent+Marker|Playball|Poiret+One|Quattrocento:400,700|Righteous|ZCOOL+XiaoWei');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Navbar Styling Starts */
 .navbar-light .navbar-brand {
   color: #fff;
-  ;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 25px;
   letter-spacing: 2px;
 }
+.navbar-light{
+  transition:  750ms ease;
+}
+.navbar-light.scrolled{
+  background: rgba(0,0,0,0.35) !important;
 
+}
 .nav-link {
   text-transform: uppercase;
 }
@@ -45,7 +59,7 @@
   bottom: 0;
   left: 5px;
   width: 0%;
-  height: 2px;
+  height: 3px;
   background-color: #fff;
   transition: all ease-in-out 250ms;
 }
@@ -123,3 +137,45 @@ header{
   opacity: 0;
 }
 /* Moving Letters Styling Ends */
+
+/* Category Blocks Styling Starts */
+.cat-item{
+  position: relative;
+  height: 100vh;
+  width: 25%;
+  min-height: 600px;
+  overflow: hidden;
+  color: #fff;
+  /* border: 2px red solid; */
+  /* background-color: aqua; */
+}
+.cat-bg{
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+.cat-bg::after{
+  content: '';
+}
+.cat-br-img{
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("../images/Categories/brownies.jpg");
+}
+.cat-cc-img{
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("../images/Categories/cupcakes.jpg");
+}
+.cat-bd-img{
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("../images/Categories/bday_cake.jpg");
+}
+.cat-mc-img{
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("../images/Categories/macroons.jpg");
+}
+.cat-title{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 4em;
+  font-family: 'Cookie', cursive;
+  border-bottom: 6px solid #ff8040;
+}
+/* Category Blocks Styling Ends */

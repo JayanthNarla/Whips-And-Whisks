@@ -19,6 +19,8 @@
 
   <!-- Text Animation JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <!-- font Awesome (SVG) -->
+  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"></script>
 
   <!-- StyleSheet -->
   <link rel="stylesheet" href="css/style.css">
@@ -26,8 +28,7 @@
   <!-- font Awesome (normal) -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 
-  <!-- font Awesome (SVG) -->
-  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"></script>
+
 
   <link rel="shortcut icon" href="cake_favicon.ico" type="image/x-icon">
 
@@ -97,20 +98,90 @@
   <!-- Header Ends -->
 
   <!-- Categories Start -->
-    <!-- Brownie Block Start -->
-    
-    <!-- Brownie Block End -->
+  <!-- Brownie Block Start -->
+  <section>
+    <div class="row">
+        <div class="cat-item">
+          <div class="cat-bg cat-br-img">
+          </div>
+          <div class="cat cat-title">
+            Brownies
+          </div>
+          <div class="cat-content">
+            <div class=" cat cat-heading"> Lorem Ipsum </div>
+          </div>
+          <div class="cat cat-text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus corrupti, necessitatibus nihil tempora
+            neque voluptatum dolore cupiditate provident eos consequuntur quae odit veniam vero doloremque quisquam
+            itaque
+            reiciendis? Cupiditate, itaque?
+          </div>
+        </div>
+      <!-- Brownie Block End -->
 
-    <!-- Cupcake Block Start -->
-    <!-- Cupcake Block End -->
+      <!-- Cupcake Block Start -->
+          <div class="cat-item">
+            <div class="cat-bg cat-cc-img">
+            </div>
+            <div class="cat cat-title">
+              Cupcakes
+            </div>
+            <div class="cat-content">
+              <div class=" cat cat-heading"> Lorem Ipsum </div>
+            </div>
+            <div class="cat cat-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus corrupti, necessitatibus nihil
+              tempora
+              neque voluptatum dolore cupiditate provident eos consequuntur quae odit veniam vero doloremque quisquam
+              itaque
+              reiciendis? Cupiditate, itaque?
+            </div>
+          </div>
+        <!-- Cupcake Block End -->
 
-    <!-- B-Cake Block Start -->
-    <!-- B-Cake Block End -->
+        <!-- B-Cake Block Start -->
+            <div class="cat-item">
+              <div class="cat-bg cat-bd-img">
+              </div>
+              <div class="cat cat-title">
+                Cakes
+              </div>
+              <div class="cat-content">
+                <div class=" cat cat-heading"> Lorem Ipsum </div>
+              </div>
+              <div class="cat cat-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus corrupti, necessitatibus nihil
+                tempora
+                neque voluptatum dolore cupiditate provident eos consequuntur quae odit veniam vero doloremque quisquam
+                itaque
+                reiciendis? Cupiditate, itaque?
+              </div>
+            </div>
+        <!-- B-Cake Block End -->
 
-    <!-- Macroon Block Start -->
-    <!-- Macroon Block End -->
+        <!-- Macroon Block Start -->
+            <div class="cat-item">
+              <div class="cat-bg cat-mc-img">
+              </div>
+              <div class="cat cat-title">
+                Macroons
+              </div>
+              <div class="cat-content">
+                <div class=" cat cat-heading"> Lorem Ipsum </div>
+              </div>
+              <div class="cat cat-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus corrupti, necessitatibus nihil
+                tempora
+                neque voluptatum dolore cupiditate provident eos consequuntur quae odit veniam vero doloremque quisquam
+                itaque
+                reiciendis? Cupiditate, itaque?
+              </div>
+            </div>
+        <!-- Macroon Block End -->
+      </div>
 
-    <!-- Categories End -->
+  </section>
+  <!-- Categories End -->
 
   <!-- Pre Loader Jquery Start -->
   <!-- <script>
@@ -181,6 +252,13 @@
 
   <!-- Moving Letters Script Ends -->
 
+  <!-- nav change scroll script start -->
+  <script>
+    $(window).scroll(function () {
+      $('nav').toggleClass('scrolled', $(this).scrollTop() > 600);
+    });
+  </script>
+  <!-- nav change scroll script end -->
 </body>
 
 </html>
