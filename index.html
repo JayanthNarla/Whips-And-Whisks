@@ -28,7 +28,8 @@
   <!-- font Awesome (normal) -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 
-
+<!-- Waypoint JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 
   <link rel="shortcut icon" href="cake_favicon.ico" type="image/x-icon">
 
@@ -99,7 +100,7 @@
 
   <!-- Categories Start -->
   <!-- Brownie Block Start -->
-  <section>
+  <section id="section2">
     <div class="row">
       <div class="cat-item">
         <div class="cat-bg cat-br-img">
@@ -187,26 +188,27 @@
 
   <section class="counter-bg" id="counter">
     <div class="container counter-content-box">
-      <h1 class="text-center stat-headers text-white"> Cakes Sold </h1>
+      <h1 class="text-center stat-headers text-white text-line"> Cakes Sold </h1>
       <div class="row stats">
         <div class="col-lg-3 col-md-6 col-12 text-center stat-content">
-          <h2 class="stat-count text-white">67</h2> <!-- TODO: add order_no col to database for keeping track of number -->
-            <h4 class="stat-text text-white">Brownies</p>
-          </div>
-          <div class="col-lg-3 col-md-6 col-12 text-center stat-content">
-            <h2 class="stat-count text-white">73</h2>
-            <h4 class="stat-text text-white">Cakes</h4>
-          </div>
-          <div class="col-lg-3 col-md-6 col-12 text-center stat-content">
-            <h2 class="stat-count text-white">86</h2>
-              <h4 class="stat-text text-white">Cupcakes</p>
-            </div>
-            <div class="col-lg-3 col-md-6 col-12 text-center stat-content">
-              <h2 class="stat-count text-white">22</h2>
-              <h4 class="stat-text text-white">Macroons</h4>
-            </div>
-          </div>
+          <h2 class="stats_count text-white">67</h2>
+          <!-- TODO: add order_no col to database for keeping track of number -->
+          <h4 class="stat-text text-white">Brownies</p>
         </div>
+        <div class="col-lg-3 col-md-6 col-12 text-center stat-content">
+          <h2 class="stats_count text-white">73</h2>
+          <h4 class="stat-text text-white">Cakes</h4>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12 text-center stat-content">
+          <h2 class="stats_count text-white">86</h2>
+          <h4 class="stat-text text-white">Cupcakes</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12 text-center stat-content">
+          <h2 class="stats_count text-white">22</h2>
+          <h4 class="stat-text text-white">Macroons</h4>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Counter Section End -->
@@ -290,19 +292,35 @@
   <!-- nav change scroll script end -->
   <!-- counter Script start -->
   <script>
-    $('.stat-count').each(function () {
-      $(this).prop('Counter', 0).animate({
-        Counter: $(this).text()
-      }, {
-        duration: 5000,
-        easing: 'swing',
-        step: function (now) {
-          $(this).text(Math.ceil(now));
-        }
-      });
+    var statSection = $(".stats"),
+        stats = $(".stats_count");
+    console.log(statSection);
+    statSection.waypoint({
+        handler: function(direction) {
+            if (direction === "down") {
+                stats.each(function() {
+                    var $this = $(this);
+                    $({
+                        Counter: 0
+                    }).animate({
+                        Counter: $this.text()
+                    }, {
+                        duration: 3000,
+                        easing: 'swing',
+                        step: function(curValue) {
+                            $this.text(Math.ceil(curValue));
+                        }
+                    });
+                });
+            }
+            // trigger once only
+            this.destroy();
+        },
+        offset: "75%"
     });
   </script>
   <!-- counter Script end -->
 </body>
 
 </html>
+
