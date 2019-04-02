@@ -101,22 +101,23 @@
   <!-- Categories Start -->
   <!-- Brownie Block Start -->
   <section id="section2">
-    <div class="row">
+    <div class="row menu_block">
       <div class="cat-item">
         <div class="cat-bg cat-br-img">
         </div>
         <div class="cat cat-title">
           Brownies
         </div>
-        <div class="cat-content">
+        <!-- <div class="cat-content">
           <div class=" cat cat-heading"> Lorem Ipsum </div>
-        </div>
+        </div> -->
         <div class="cat cat-text">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus corrupti, necessitatibus nihil tempora
           neque voluptatum dolore cupiditate provident eos consequuntur quae odit veniam vero doloremque quisquam
           itaque
           reiciendis? Cupiditate, itaque?
         </div>
+        <button class="cat-btn"> View Menu </button>
       </div>
       <!-- Brownie Block End -->
 
@@ -127,9 +128,9 @@
         <div class="cat cat-title">
           Cupcakes
         </div>
-        <div class="cat-content">
+        <!-- <div class="cat-content">
           <div class=" cat cat-heading"> Lorem Ipsum </div>
-        </div>
+        </div> -->
         <div class="cat cat-text">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus corrupti, necessitatibus nihil
           tempora
@@ -137,6 +138,7 @@
           itaque
           reiciendis? Cupiditate, itaque?
         </div>
+        <button class="cat-btn"> View Menu </button>
       </div>
       <!-- Cupcake Block End -->
 
@@ -147,9 +149,9 @@
         <div class="cat cat-title">
           Cakes
         </div>
-        <div class="cat-content">
+        <!-- <div class="cat-content">
           <div class=" cat cat-heading"> Lorem Ipsum </div>
-        </div>
+        </div> -->
         <div class="cat cat-text">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus corrupti, necessitatibus nihil
           tempora
@@ -157,6 +159,7 @@
           itaque
           reiciendis? Cupiditate, itaque?
         </div>
+        <button class="cat-btn"> View Menu </button>
       </div>
       <!-- B-Cake Block End -->
 
@@ -167,9 +170,9 @@
         <div class="cat cat-title">
           Macroons
         </div>
-        <div class="cat-content">
+        <!-- <div class="cat-content">
           <div class=" cat cat-heading"> Lorem Ipsum </div>
-        </div>
+        </div> -->
         <div class="cat cat-text">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus corrupti, necessitatibus nihil
           tempora
@@ -177,6 +180,8 @@
           itaque
           reiciendis? Cupiditate, itaque?
         </div>
+        <button class="cat-btn"> View Menu </button>
+        
       </div>
       <!-- Macroon Block End -->
     </div>
@@ -213,6 +218,15 @@
 
   <!-- Counter Section End -->
 
+  <!-- Go to Top Button starts -->
+
+  <button onclick="topFunction()" id="btn-top">
+    <i class="fas fa-chevron-up" id="#uparrow"></i>
+    Back to Top
+  </button>
+
+
+  <!-- Go to Top Button ends -->
 
   <!-- Pre Loader Jquery Start -->
   <!-- <script>
@@ -319,7 +333,25 @@
     });
   </script>
   <!-- counter Script end -->
+<!-- Back to Top Script starts -->
+<script>
+window.onscroll = function() {scrollFunction()};
 
+function scrollFunction() {
+  if (document.body.scrollTop > 180 || document.documentElement.scrollTop > 180) {
+    document.getElementById("btn-top").style.display = "block";
+  } else {
+    document.getElementById("btn-top").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0; 
+}
+</script>
+<!-- Back to Top Script ends -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="js/footer-reveal.min.js"></script>
 </body>
