@@ -172,12 +172,29 @@ header {
   transition: 0.5s;
 }
 
+.gray-gradient:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent 0%, black 120%);
+  transition: opacity 420ms ease-in-out;
+  opacity: 0;
+}
+
+
+.gray-gradient:hover:after {
+  opacity: 1;
+}
+
 .cat-br-img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Categories/brownies.jpg");
 }
 
 .cat-cc-img {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Categories/cupcakes.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.65)), url("../images/Categories/cupcakes.jpg");
 }
 
 .cat-bd-img {
@@ -196,24 +213,12 @@ header {
   font-size: 4em;
   font-family: 'Cookie', cursive;
   border-bottom: 6px solid #ff8040;
-}
-
-.cat-text {
-  /* position: relative; */
-  /* top: 60%; */
-  /* left: 0%; */
-  /* transform: translate(-50%, -50%); */
-  font-size: 18px;
-  color: #fff;
-  width: 80%;
-  text-align: center;
-  font-family: 'Asul', serif;
-  text-align: center;
+  z-index: 1;
 }
 
 .cat-btn {
   position: absolute;
-  top: 83%;
+  top: 67%;
   left: 50%;
   transform: translate(-50%); 
   font-size: 14px;
@@ -221,17 +226,20 @@ header {
   margin-top: 30px;
   padding: 15px 40px;
   border: 2px white solid;
-  background: none;
+  background: rgba(0, 0, 0, 0.4);
   color: #fff;
   text-transform: uppercase;
-  transition: 250ms ease-in;
+  transition: 350ms ease-in;
+  z-index: 10;
 }
 
 .cat-btn:hover{
   color: #000;
   background: #fff;
 }
-
+#section2 a{
+  text-decoration: none;
+}
 /* Category Blocks Styling Ends */
 
 /* Counter Styling starts */
@@ -286,13 +294,9 @@ header {
 #btn-top {
   display: none;
   position: fixed;
-  /* Fixed/sticky position */
   bottom: 20px;
-  /* Place the button at the bottom of the page */
   right: 25px;
-  /* Place the button 30px from the right */
   z-index: 99;
-  /* Make sure it does not overlap */
   font-size: 13px;
   padding: 5px 9px;
   background-color: #ff8040;
@@ -300,6 +304,7 @@ header {
   font-weight: 400;
   transition: 280ms ease-in-out;
   border-radius: 5px;
+  outline: none;
 }
 
 #btn-top:hover {
@@ -315,7 +320,3 @@ header {
 }
 
 /* go to top button styling ends */
-
-/* Sweep top Starts */
-
-/* Sweep top ends */
