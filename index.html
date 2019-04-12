@@ -28,8 +28,8 @@
   <!-- font Awesome (normal) -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 
-<!-- Waypoint JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <!-- Waypoint JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 
   <link rel="shortcut icon" href="cake_favicon.ico" type="image/x-icon">
 
@@ -104,15 +104,13 @@
     <div class="row menu_block">
       <div class="cat-item gray-gradient">
         <div class="cat-bg cat-br-img">
-          </div>
+        </div>
         <div class="cat cat-title">
           Brownies
         </div>
         <a href="" class="cat-btn"> View Menu </a>
-      
       </div>
       <!-- Brownie Block End -->
-
       <!-- Cupcake Block Start -->
       <div class="cat-item gray-gradient">
         <div class="cat-bg cat-cc-img">
@@ -143,7 +141,7 @@
           Macroons
         </div>
         <a href="" class="cat-btn"> View Menu </a>
-        
+
       </div>
       <!-- Macroon Block End -->
     </div>
@@ -269,54 +267,55 @@
   <!-- counter Script start -->
   <script>
     var statSection = $(".stats"),
-        stats = $(".stats_count");
+      stats = $(".stats_count");
     statSection.waypoint({
-        handler: function(direction) {
-            if (direction === "down") {
-                stats.each(function() {
-                    var $this = $(this);
-                    $({
-                        Counter: 0
-                    }).animate({
-                        Counter: $this.text()
-                    }, {
-                        duration: 3000,
-                        easing: 'swing',
-                        step: function(curValue) {
-                            $this.text(Math.ceil(curValue));
-                        }
-                    });
-                });
-            }
-            // trigger once only
-            this.destroy();
-        },
-        offset: "75%"
+      handler: function (direction) {
+        if (direction === "down") {
+          stats.each(function () {
+            var $this = $(this);
+            $({
+              Counter: 0
+            }).animate({
+              Counter: $this.text()
+            }, {
+              duration: 3000,
+              easing: 'swing',
+              step: function (curValue) {
+                $this.text(Math.ceil(curValue));
+              }
+            });
+          });
+        }
+        // trigger once only
+        this.destroy();
+      },
+      offset: "75%"
     });
   </script>
   <!-- counter Script end -->
-<!-- Back to Top Script starts -->
-<script>
-window.onscroll = function() {scrollFunction()};
+  <!-- Back to Top Script starts -->
+  <script>
+    window.onscroll = function () {
+      scrollFunction()
+    };
 
-function scrollFunction() {
-  if (document.body.scrollTop > 180 || document.documentElement.scrollTop > 180) {
-    document.getElementById("btn-top").style.display = "block";
-  } else {
-    document.getElementById("btn-top").style.display = "none";
-  }
-}
+    function scrollFunction() {
+      if (document.body.scrollTop > 180 || document.documentElement.scrollTop > 180) {
+        document.getElementById("btn-top").style.display = "block";
+      } else {
+        document.getElementById("btn-top").style.display = "none";
+      }
+    }
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0; 
-}
-</script>
-<!-- Back to Top Script ends -->
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <!-- Back to Top Script ends -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="js/footer-reveal.min.js"></script>
 </body>
 
 </html>
-
