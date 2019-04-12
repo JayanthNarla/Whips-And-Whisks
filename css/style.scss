@@ -147,7 +147,6 @@ header {
   left: 5%;
 }
 
-
 /* Moving Letters Styling Ends */
 
 /* Category Blocks Styling Starts */
@@ -308,12 +307,12 @@ header {
   transition: 280ms ease-in-out;
   border-radius: 5px;
   outline: none;
-}
 
-#btn-top:hover {
-  background: #000;
-  color: #fff;
-  border: 1px solid #ff8040;
+  &:hover {
+    background: #000;
+    color: #fff;
+    border: 1px solid #ff8040;
+  }
 }
 
 .fa-chevron-up {
