@@ -9,29 +9,26 @@
 }
 
 /* Navbar Styling Starts */
+.navbar-light {
+  -webkit-transition: 750ms ease;
+  transition: 750ms ease;
+}
+
 .navbar-light .navbar-brand {
   color: #fff;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 25px;
   letter-spacing: 2px;
+  color: white !important;
 }
 
-.navbar-light {
-  -webkit-transition: 750ms ease;
-  transition: 750ms ease;
-}
-
-.navbar-light.scrolled {
+.navbar-light .scrolled {
   background: rgba(0, 0, 0, 0.5) !important;
 }
 
 .nav-link {
   text-transform: uppercase;
-}
-
-.navbar-light .navbar-brand {
-  color: white !important;
 }
 
 .navbar-light .navbar-nav .active > .nav-link,
@@ -101,12 +98,6 @@ header {
   color: #fff;
 }
 
-.ml2 {
-  font-weight: 300;
-  font-size: 3em;
-  color: #fff;
-}
-
 .ml5 .text-wrapper {
   position: relative;
   display: inline-block;
@@ -129,12 +120,6 @@ header {
           transform-origin: 0.5 0;
 }
 
-.main-content {
-  position: absolute;
-  top: 35%;
-  left: 5%;
-}
-
 .ml5 .ampersand {
   font-family: Baskerville, "EB Garamond", serif;
   font-style: italic;
@@ -147,6 +132,18 @@ header {
 .ml5 .letters {
   display: inline-block;
   opacity: 0;
+}
+
+.ml2 {
+  font-weight: 300;
+  font-size: 3em;
+  color: #fff;
+}
+
+.main-content {
+  position: absolute;
+  top: 35%;
+  left: 5%;
 }
 
 /* Moving Letters Styling Ends */
