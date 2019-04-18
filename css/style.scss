@@ -457,3 +457,86 @@ header {
 #macroons {
   @extend #brownies;
 }
+// Footer styling Starts
+
+footer {
+  background: linear-gradient(to right, #a09f9f, #cac9c9, #a09f9f);
+  color: #333;
+  padding-top: 100px;
+  padding-bottom: 70px;
+  font-size: 14px;
+  width: 100%;
+  bottom: 0;
+  max-width: 1920px;
+  // height: 20vh;
+  .center {
+    text-align: center;
+  }
+  .footer_logo {
+    margin-bottom: 20px;
+  }
+  a {
+    color: #333;
+    font-size: 14px;
+    display: block;
+    line-height: 30px;
+    img {
+      height: 120px;
+      vertical-align: middle;
+      border: none;
+      max-width: 100%;
+    }
+  }
+  .social_button {
+    font-size: 0;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    a {
+      padding: 5px 22px 5px 26px;
+      border: 1.15px solid rgba(51, 51, 51, 0.5);
+      color: #333;
+      font-size: 22px;
+      display: inline-block;
+      width: 69px;
+      text-decoration: none;
+      outline: none;
+      transition: 500ms;
+      &:hover {
+        background-color: #ff8040;
+        color: #fff;
+      }
+    }
+  }
+  .copyright {
+    text-align: center;
+  }
+  .footer_contact {
+    margin-top: 7.5vh;
+    text-align: right;
+    .footer_contact_row {
+      margin-bottom: 38px;
+      p {
+        font-size: 1rem;
+        margin: 5px 0;
+      }
+    }
+    h5 {
+      text-align: right;
+      margin-bottom: 20px;
+      color: #333;
+      line-height: 30px;
+      font-size: 2.2rem;
+      text-transform: uppercase;
+    }
+    div {
+      margin-bottom: 3px;
+    }
+  }
+  span {
+    color: #ff8040;
+    font-size: 1.16rem;
+    font-weight: 500;
+  }
+}
+
+// Footer styling ends
