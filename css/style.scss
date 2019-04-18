@@ -23,7 +23,7 @@
     color: white !important;
   }
 
-  .scrolled {
+  &.scrolled {
     background: rgba(0, 0, 0, 0.5) !important;
   }
 }
@@ -32,10 +32,10 @@
   text-transform: uppercase;
 }
 
-.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .show>.nav-link {
+.navbar-light .navbar-nav .show > .nav-link {
   color: #fff;
   /* insert fav color*/
 }
@@ -322,3 +322,138 @@ header {
 }
 
 /* go to top button styling ends */
+
+/* menu section styling starts */
+#menu {
+  padding-top: 20vh;
+  height: 190vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/menu/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  .line {
+    margin: 3rem auto;
+    height: 0.5rem;
+    width: 8rem;
+    background-color: #ff8040;
+  }
+  #menu-list {
+    min-height: 150vh;
+    background: linear-gradient(to right, #c5c5c5, white, #c5c5c5);
+    position: relative;
+    .page {
+      margin-top: 3rem;
+    }
+    #menu-nav {
+      padding-top: 7rem;
+      ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 15px 0px;
+      }
+      a {
+        color: #000;
+        font-size: 2rem;
+        font-family: "Kaushan Script", cursive;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+    /* menu section styling ends */
+  }
+}
+#brownies-content {
+  padding: 20px;
+  width: 80%;
+  max-width: 1100px;
+  margin: 50px auto;
+  h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #000;
+    text-transform: uppercase;
+  }
+  .menu-content {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 960px;
+    height: 100%;
+    .menu-content-item {
+      display: flex;
+      width: 50%;
+      list-style-type: none;
+      padding: 0 1em;
+      margin: 0 0 2em;
+      color: #000;
+
+      .menu-sec {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        .conts {
+          display: flex;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+
+          .spacer {
+            content: "";
+            width: 100%;
+            height: 0.75em;
+            margin: 0 0.5rem;
+            border-bottom: 2px dotted #999;
+            flex: 1;
+          }
+        }
+      }
+    }
+  }
+}
+#cakes-content {
+  @extend #brownies-content;
+}
+#cupcakes-content {
+  @extend #cakes-content;
+}
+#macroons-content {
+  @extend #cakes-content;
+}
+.hide {
+  display: none;
+}
+.conditions-price {
+  margin-top: 5vh;
+  bottom: 1rem;
+  font-size: 1rem !important;
+  .menu-pricing {
+    padding-bottom: 5vh;
+  }
+  .bases {
+    font-size: 1.2rem;
+  }
+}
+#brownies {
+  &:hover {
+    background: linear-gradient(to bottom, #ff512f, #f09819);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+}
+#cakes {
+  @extend #brownies;
+}
+#cupcakes {
+  @extend #brownies;
+}
+#macroons {
+  @extend #brownies;
+}
