@@ -1,1014 +1,1036 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 
-  <!-- Popper JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Text Animation JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <!-- font Awesome (SVG) -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
+    ></script>
 
-  <!-- Text Animation JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-  <!-- font Awesome (SVG) -->
-  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"></script>
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="css/style.css" />
 
-  <!-- StyleSheet -->
-  <link rel="stylesheet" href="css/style.css">
+    <!-- font Awesome (normal) -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
 
-  <!-- font Awesome (normal) -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Waypoint JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 
-  <!-- Waypoint JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <link rel="shortcut icon" href="cake_favicon.ico" type="image/x-icon" />
 
-  <link rel="shortcut icon" href="cake_favicon.ico" type="image/x-icon">
+    <title>Whips And Whisks</title>
+  </head>
 
-  <title>Whips And Whisks</title>
-</head>
+  <body>
+    <!-- Header Starts -->
+    <header>
+      <!-- Navigation Starts -->
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="images/Brand/circle-cropped.png"
+              width="50"
+              height="50"
+              class="d-inline-block align-middle"
+              alt=""
+            />&nbsp; WHIPS & WHISKS</a
+          >
+          <button
+            class="navbar-toggler navbar-dark"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsenav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-<body>
-  <!-- Header Starts -->
-  <header>
-    <!-- Navigation Starts -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="images/Brand/circle-cropped.png" width="50" height="50" class="d-inline-block align-middle"
-            alt="">&nbsp;
-          WHIPS & WHISKS</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsenav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="collapsenav">
-          <ul class="navbar-nav ml-auto hover-effect">
-            <li class="nav-item active">
-              <a class="nav-link text-center" href="">About Us <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-center" href="#menu">Menu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-center" href="">Order</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-center" href="#footer">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- Navigation Ends -->
-
-    <!-- Home Text Starts -->
-
-    <div class="main-content">
-      <h1 class="ml5">
-        <span class="text-wrapper">
-          <span class="line line1"></span>
-          <span class="letters letters-left">WHIPS</span>
-          <span class="letters ampersand">&amp;</span>
-          <span class="letters letters-right">WHISKS</span>
-          <span class="line line2"></span>
-        </span>
-      </h1>
-    </div>
-    <!-- Home Text Ends -->
-
-  </header>
-  <!-- Header Ends -->
-
-  <!-- Categories Start -->
-  <!-- Brownie Block Start -->
-  <section id="section2">
-    <div class="row menu_block">
-      <div class="cat-item gray-gradient">
-        <div class="cat-bg cat-br-img">
-        </div>
-        <div class="cat cat-title">
-          Brownies
-        </div>
-        <a href="#menu" class="cat-btn"> View Menu </a>
-      </div>
-      <!-- Brownie Block End -->
-      <!-- Cupcake Block Start -->
-      <div class="cat-item gray-gradient">
-        <div class="cat-bg cat-cc-img">
-        </div>
-        <div class="cat cat-title">
-          Cupcakes
-        </div>
-        <a href="#menu" class="cat-btn"> View Menu </a>
-      </div>
-      <!-- Cupcake Block End -->
-
-      <!-- B-Cake Block Start -->
-      <div class="cat-item gray-gradient">
-        <div class="cat-bg cat-bd-img">
-        </div>
-        <div class="cat cat-title">
-          Cakes
-        </div>
-        <a href="#menu" class="cat-btn"> View Menu </a>
-      </div>
-      <!-- B-Cake Block End -->
-
-      <!-- Macroon Block Start -->
-      <div class="cat-item gray-gradient">
-        <div class="cat-bg cat-mc-img">
-        </div>
-        <div class="cat cat-title">
-          Macroons
-        </div>
-        <a href="#menu" class="cat-btn"> View Menu </a>
-
-      </div>
-      <!-- Macroon Block End -->
-    </div>
-
-  </section>
-  <!-- Categories End -->
-
-  <!-- Counter Section Start -->
-
-  <section class="counter-bg" id="counter">
-    <div class="container counter-content-box">
-      <h1 class="text-center stat-headers text-white text-line"> Cakes Sold </h1>
-      <div class="row stats">
-        <div class="col-lg-3 col-md-6 col-12 text-center stat-content">
-          <h2 class="stats_count text-white">67</h2>
-          <!-- TODO: add order_no col to database for keeping track of number -->
-          <h4 class="stat-text text-white">Brownies</p>
-        </div>
-        <div class="col-lg-3 col-md-6 col-12 text-center stat-content">
-          <h2 class="stats_count text-white">73</h2>
-          <h4 class="stat-text text-white">Cakes</h4>
-        </div>
-        <div class="col-lg-3 col-md-6 col-12 text-center stat-content">
-          <h2 class="stats_count text-white">86</h2>
-          <h4 class="stat-text text-white">Cupcakes</p>
-        </div>
-        <div class="col-lg-3 col-md-6 col-12 text-center stat-content">
-          <h2 class="stats_count text-white">22</h2>
-          <h4 class="stat-text text-white">Macroons</h4>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Counter Section End -->
-
-  <!-- Menu Section Starts -->
-
-  <section id="menu">
-    <div class="container">
-      <div class="" id="menu-list">
-        <div class="menu-nav" id="menu-nav">
-          <ul class="">
-            <li class="menu-item active">
-              <a class="text-center" id="brownies">Cakes</a>
-            </li>
-            <li class="menu-item">
-              <a class="text-center" id="cakes">Brownies</a>
-            </li>
-            <li class="menu-item">
-              <a class="text-center" id="cupcakes">Cupcakes</a>
-            </li>
-            <li class="menu-item">
-              <a class="text-center" id="macroons">Macroons</a>
-            </li>
-          </ul>
-        </div>
-        <div class="line"></div>
-        <div class="menu-contents page" id="brownies-content">
-          <ul class="menu-content">
-            <li class="menu-content-item">
-              <div class="menu-sec">
-                <div class="conts">
-                  <h2>
-                    Oreo
-                  </h2>
-                  <span class='spacer'></span>
-                  <span class='price'>
-                    Rs. 650*
-                  </span>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt deserunt minima praesentium
-                  blanditiis.
-                </p>
-              </div>
-            </li>
-            <li class="menu-content-item">
-              <div class="menu-sec">
-                <div class="conts">
-                  <h2>
-                    Swiss meringue
-                  </h2>
-                  <span class='spacer'></span>
-                  <span class='price'>
-                    Rs. 650*
-                  </span>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt deserunt minima praesentium
-                  blanditiis.
-                </p>
-              </div>
-            </li>
-            <li class="menu-content-item">
-              <div class="menu-sec">
-                <div class="conts">
-                  <h2>
-                    Choco ganache dark n white
-                  </h2>
-                  <span class='spacer'></span>
-                  <span class='price'>
-                    Rs. 650*
-                  </span>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt deserunt minima praesentium
-                  blanditiis.
-                </p>
-              </div>
-            </li>
-            <li class="menu-content-item">
-              <div class="menu-sec">
-                <div class="conts">
-                  <h2>
-                    Vanilla buttercream
-                  </h2>
-                  <span class='spacer'></span>
-                  <span class='price'>
-                    Rs. 650*
-                  </span>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt deserunt minima praesentium
-                  blanditiis.
-                </p>
-              </div>
-            </li>
-            <li class="menu-content-item">
-              <div class="menu-sec">
-                <div class="conts">
-                  <h2>
-                    Nutella buttercream
-                  </h2>
-                  <span class='spacer'></span>
-                  <span class='price'>
-                    Rs. 650*
-                  </span>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt deserunt minima praesentium
-                  blanditiis.
-                </p>
-              </div>
-            </li>
-            <li class="menu-content-item">
-              <div class="menu-sec">
-                <div class="conts">
-                  <h2>
-                    Blueberry
-                  </h2>
-                  <span class='spacer'></span>
-                  <span class='price'>
-                    Rs. 650*
-                  </span>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt deserunt minima praesentium
-                  blanditiis.
-                </p>
-              </div>
-            </li>
-            <li class="menu-content-item">
-              <div class="menu-sec">
-                <div class="conts">
-                  <h2>
-                    Peanut butter
-                  </h2>
-                  <span class='spacer'></span>
-                  <span class='price'>
-                    Rs. 650*
-                  </span>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt deserunt minima praesentium
-                  blanditiis.
-                </p>
-              </div>
-            </li>
-            <li class="menu-content-item">
-              <div class="menu-sec">
-                <div class="conts">
-                  <h2>
-                    Cream cheese
-                  </h2>
-                  <span class='spacer'></span>
-                  <span class='price'>
-                    Rs. 650*
-                  </span>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt deserunt minima praesentium
-                  blanditiis.
-                </p>
-              </div>
-            </li>
-            <li class="menu-content-item">
-              <div class="menu-sec">
-                <div class="conts">
-                  <h2>
-                    Lemon cream cheese
-                  </h2>
-                  <span class='spacer'></span>
-                  <span class='price'>
-                    Rs. 650*
-                  </span>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt deserunt minima praesentium
-                  blanditiis.
-                </p>
-              </div>
-            </li>
-          </ul>
-          <div class="conditions-price container">
-            <p class="bases">
-              * 4 Cake bases available - Vanilla, Chocolate, Red Velvet, Hazelnut.
-            </p>
-            <p>
-              * The mentioned price is for 500gm cakes.
-              Price for 1Kg cake is Rs. 1250.
-            </p>
+          <div class="collapse navbar-collapse" id="collapsenav">
+            <ul class="navbar-nav ml-auto hover-effect">
+              <li class="nav-item active">
+                <a class="nav-link text-center" href=""
+                  >About Us <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-center" href="#menu">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-center" href="">Order</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-center" href="#footer">Contact Us</a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="menu-contents page hide" id="cakes-content">
-          <ul class="menu-content">
-            <li class="menu-content-item">
-              <div class="menu-sec">
-                <div class="conts">
-                  <h2>
-                    Food Item Title Here
-                  </h2>
-                  <span class='spacer'></span>
-                  <span class='price'>
-                    $ 14.95
-                  </span>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt deserunt minima praesentium
-                  blanditiis.
-                </p>
-              </div>
-            </li>
-            <li class="menu-content-item">
-              <div class="menu-sec">
-                <div class="conts">
-                  <h2>
-                    Food Item Title Here
-                  </h2>
-                  <span class='spacer'></span>
-                  <span class='price'>
-                    $ 14.95
-                  </span>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt deserunt minima praesentium
-                  blanditiis.
-                </p>
-              </div>
-            </li>
-            <li class="menu-content-item">
-              <div class="menu-sec">
-                <div class="conts">
-                  <h2>
-                    Food Item Title Here
-                  </h2>
-                  <span class='spacer'></span>
-                  <span class='price'>
-                    $ 14.95
-                  </span>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt deserunt minima praesentium
-                  blanditiis.
-                </p>
-              </div>
-            </li>
-            <li class="menu-content-item">
-              <div class="menu-sec">
-                <div class="conts">
-                  <h2>
-                    Food Item Title Here
-                  </h2>
-                  <span class='spacer'></span>
-                  <span class='price'>
-                    $ 14.95
-                  </span>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt deserunt minima praesentium
-                  blanditiis.
-                </p>
-              </div>
-            </li>
-            <li class="menu-content-item">
-              <div class="menu-sec">
-                <div class="conts">
-                  <h2>
-                    Food Item Title Here
-                  </h2>
-                  <span class='spacer'></span>
-                  <span class='price'>
-                    $ 14.95
-                  </span>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt deserunt minima praesentium
-                  blanditiis.
-                </p>
-              </div>
-            </li>
-            <li class="menu-content-item">
-              <div class="menu-sec">
-                <div class="conts">
-                  <h2>
-                    Food Item Title Here
-                  </h2>
-                  <span class='spacer'></span>
-                  <span class='price'>
-                    $ 14.95
-                  </span>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt deserunt minima praesentium
-                  blanditiis.
-                </p>
-              </div>
-            </li>
-            <li class="menu-content-item">
-              <div class="menu-sec">
-                <div class="conts">
-                  <h2>
-                    Food Item Title Here
-                  </h2>
-                  <span class='spacer'></span>
-                  <span class='price'>
-                    $ 14.95
-                  </span>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt deserunt minima praesentium
-                  blanditiis.
-                </p>
-              </div>
-            </li>
-            <li class="menu-content-item">
-              <div class="menu-sec">
-                <div class="conts">
-                  <h2>
-                    Food Item Title Here
-                  </h2>
-                  <span class='spacer'></span>
-                  <span class='price'>
-                    $ 14.95
-                  </span>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt deserunt minima praesentium
-                  blanditiis.
-                </p>
-              </div>
-            </li>
-            <li class="menu-content-item">
-              <div class="menu-sec">
-                <div class="conts">
-                  <h2>
-                    Food Item Title Here
-                  </h2>
-                  <span class='spacer'></span>
-                  <span class='price'>
-                    $ 14.95
-                  </span>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt deserunt minima praesentium
-                  blanditiis.
-                </p>
-              </div>
-            </li>
-            <li class="menu-content-item">
-              <div class="menu-sec">
-                <div class="conts">
-                  <h2>
-                    Food Item Title Here
-                  </h2>
-                  <span class='spacer'></span>
-                  <span class='price'>
-                    $ 14.95
-                  </span>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt deserunt minima praesentium
-                  blanditiis.
-                </p>
-              </div>
-            </li>
-            <li class="menu-content-item">
-              <div class="menu-sec">
-                <div class="conts">
-                  <h2>
-                    Food Item Title Here
-                  </h2>
-                  <span class='spacer'></span>
-                  <span class='price'>
-                    $ 14.95
-                  </span>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt deserunt minima praesentium
-                  blanditiis.
-                </p>
-              </div>
-            </li>
-            <li class="menu-content-item">
-              <div class="menu-sec">
-                <div class="conts">
-                  <h2>
-                    Food Item Title Here
-                  </h2>
-                  <span class='spacer'></span>
-                  <span class='price'>
-                    $ 14.95
-                  </span>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt deserunt minima praesentium
-                  blanditiis.
-                </p>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="menu-contents page hide" id="cupcakes-content">
-          <ul class="menu-content">
-            <li class="menu-content-item">
-              <div class="menu-sec">
-                <div class="conts">
-                  <h2>
-                    Oreo
-                  </h2>
-                  <span class='spacer'></span>
-                  <!-- <span class='price'>
-                  Rs. 650*
-                </span> -->
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt deserunt minima praesentium
-                  blanditiis.
-                </p>
-              </div>
-            </li>
-            <li class="menu-content-item">
-              <div class="menu-sec">
-                <div class="conts">
-                  <h2>
-                    Swiss meringue
-                  </h2>
-                  <span class='spacer'></span>
-                  <!-- <span class='price'>
-                  Rs. 650*
-                </span> -->
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt deserunt minima praesentium
-                  blanditiis.
-                </p>
-              </div>
-            </li>
-            <li class="menu-content-item">
-              <div class="menu-sec">
-                <div class="conts">
-                  <h2>
-                    Choco ganache dark n white
-                  </h2>
-                  <span class='spacer'></span>
-                  <!-- <span class='price'>
-                  Rs. 650*
-                </span> -->
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt deserunt minima praesentium
-                  blanditiis.
-                </p>
-              </div>
-            </li>
-            <li class="menu-content-item">
-              <div class="menu-sec">
-                <div class="conts">
-                  <h2>
-                    Vanilla buttercream
-                  </h2>
-                  <span class='spacer'></span>
-                  <!-- <span class='price'>
-                  Rs. 650*
-                </span> -->
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt deserunt minima praesentium
-                  blanditiis.
-                </p>
-              </div>
-            </li>
-            <li class="menu-content-item">
-              <div class="menu-sec">
-                <div class="conts">
-                  <h2>
-                    Nutella buttercream
-                  </h2>
-                  <span class='spacer'></span>
-                  <!-- <span class='price'>
-                  Rs. 650*
-                </span> -->
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt deserunt minima praesentium
-                  blanditiis.
-                </p>
-              </div>
-            </li>
-            <li class="menu-content-item">
-              <div class="menu-sec">
-                <div class="conts">
-                  <h2>
-                    Blueberry
-                  </h2>
-                  <span class='spacer'></span>
-                  <!-- <span class='price'>
-                  Rs. 650*
-                </span> -->
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt deserunt minima praesentium
-                  blanditiis.
-                </p>
-              </div>
-            </li>
-            <li class="menu-content-item">
-              <div class="menu-sec">
-                <div class="conts">
-                  <h2>
-                    Peanut butter
-                  </h2>
-                  <span class='spacer'></span>
-                  <!-- <span class='price'>
-                  Rs. 650*
-                </span> -->
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt deserunt minima praesentium
-                  blanditiis.
-                </p>
-              </div>
-            </li>
-            <li class="menu-content-item">
-              <div class="menu-sec">
-                <div class="conts">
-                  <h2>
-                    Cream cheese
-                  </h2>
-                  <span class='spacer'></span>
-                  <!-- <span class='price'>
-                  Rs. 650*
-                </span> -->
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt deserunt minima praesentium
-                  blanditiis.
-                </p>
-              </div>
-            </li>
-            <li class="menu-content-item">
-              <div class="menu-sec">
-                <div class="conts">
-                  <h2>
-                    Lemon cream cheese
-                  </h2>
-                  <span class='spacer'></span>
-                  <!-- <span class='price'>
-                  Rs. 650*
-                </span> -->
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt deserunt minima praesentium
-                  blanditiis.
-                </p>
-              </div>
-            </li>
-          </ul>
-          <div class="conditions-price container">
-            <div class="menu-pricing">
-              <h4>
-                Pricing:
-              </h4>
-              <h5>
-                Brownies box of 6 : 350/- <br>
-                Brownies box of 12 : 600/-
-              </h5>
-            </div>
-            <!-- <p class="bases">
-            * 4 Cupcake bases available - Vanilla, Chocolate, Red Velvet, Hazelnut. 
-          </p> -->
+      </nav>
+      <!-- Navigation Ends -->
 
+      <!-- Home Text Starts -->
+
+      <div class="main-content">
+        <h1 class="ml5">
+          <span class="text-wrapper">
+            <!-- <span class="line line1"></span> -->
+            <span class="letters letters-left">WHIPS</span>
+            <span class="letters ampersand">&amp;</span>
+            <span class="letters letters-right">WHISKS</span>
+            <!-- <span class="line line2"></span> -->
+          </span>
+        </h1>
+      </div>
+      <!-- Home Text Ends -->
+    </header>
+    <!-- Header Ends -->
+
+    <!-- Categories Start -->
+    <!-- Brownie Block Start -->
+    <section id="section2">
+      <div class="row menu_block">
+        <div class="cat-item gray-gradient">
+          <div class="cat-bg cat-br-img"></div>
+          <div class="cat cat-title">
+            Brownies
           </div>
+          <a href="#menu" class="cat-btn"> View Menu </a>
         </div>
-        <div class="menu-contents page hide" id="macroons-content">
-          <ul class="menu-content">
-            <li class="menu-content-item">
-              <div class="menu-sec">
-                <div class="conts">
-                  <h2>
-                    Pista
-                  </h2>
-                  <span class='spacer'></span>
-                  <!-- <span class='price'>
-                  Rs. 650*
-                </span> -->
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt deserunt minima praesentium
-                  blanditiis.
-                </p>
-              </div>
-            </li>
-            <li class="menu-content-item">
-              <div class="menu-sec">
-                <div class="conts">
-                  <h2>
-                    Chocolate
-                  </h2>
-                  <span class='spacer'></span>
-                  <!-- <span class='price'>
-                  Rs. 650*
-                </span> -->
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt deserunt minima praesentium
-                  blanditiis.
-                </p>
-              </div>
-            </li>
-            <li class="menu-content-item">
-              <div class="menu-sec">
-                <div class="conts">
-                  <h2>
-                    Blueberry
-                  </h2>
-                  <span class='spacer'></span>
-                  <!-- <span class='price'>
-                  Rs. 650*
-                </span> -->
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt deserunt minima praesentium
-                  blanditiis.
-                </p>
-              </div>
-            </li>
-            <li class="menu-content-item">
-              <div class="menu-sec">
-                <div class="conts">
-                  <h2>
-                    Dark chocolate
-                  </h2>
-                  <span class='spacer'></span>
-                  <!-- <span class='price'>
-                  Rs. 650*
-                </span> -->
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt deserunt minima praesentium
-                  blanditiis.
-                </p>
-              </div>
-            </li>
-            <li class="menu-content-item">
-              <div class="menu-sec">
-                <div class="conts">
-                  <h2>
-                    Paan
-                  </h2>
-                  <span class='spacer'></span>
-                  <!-- <span class='price'>
-                  Rs. 650*
-                </span> -->
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt deserunt minima praesentium
-                  blanditiis.
-                </p>
-              </div>
-            </li>
-            <li class="menu-content-item">
-              <div class="menu-sec">
-                <div class="conts">
-                  <h2>
-                    Tandaai
-                  </h2>
-                  <span class='spacer'></span>
-                  <!-- <span class='price'>
-                  Rs. 650*
-                </span> -->
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt deserunt minima praesentium
-                  blanditiis.
-                </p>
-              </div>
-            </li>
-            <li class="menu-content-item">
-              <div class="menu-sec">
-                <div class="conts">
-                  <h2>
-                    Mango
-                  </h2>
-                  <span class='spacer'></span>
-                  <!-- <span class='price'>
-                  Rs. 650*
-                </span> -->
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt deserunt minima praesentium
-                  blanditiis.
-                </p>
-              </div>
-            </li>
-            <li class="menu-content-item">
-              <div class="menu-sec">
-                <div class="conts">
-                  <h2>
-                    Swiss meringue
-                  </h2>
-                  <span class='spacer'></span>
-                  <!-- <span class='price'>
-                  Rs. 650*
-                </span> -->
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt deserunt minima praesentium
-                  blanditiis.
-                </p>
-              </div>
-            </li>
-            <li class="menu-content-item">
-              <div class="menu-sec">
-                <div class="conts">
-                  <h2>
-                    Vanilla
-                  </h2>
-                  <span class='spacer'></span>
-                  <!-- <span class='price'>
-                  Rs. 650*
-                </span> -->
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt deserunt minima praesentium
-                  blanditiis.
-                </p>
-              </div>
-            </li>
-            <li class="menu-content-item">
-              <div class="menu-sec">
-                <div class="conts">
-                  <h2>
-                    Strawberry
-                  </h2>
-                  <span class='spacer'></span>
-                  <!-- <span class='price'>
-                  Rs. 650*
-                </span> -->
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt deserunt minima praesentium
-                  blanditiis.
-                </p>
-              </div>
-            </li>
-            <li class="menu-content-item">
-              <div class="menu-sec">
-                <div class="conts">
-                  <h2>
-                    Raspberry
-                  </h2>
-                  <span class='spacer'></span>
-                  <!-- <span class='price'>
-                  Rs. 650*
-                </span> -->
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt deserunt minima praesentium
-                  blanditiis.
-                </p>
-              </div>
-            </li>
-          </ul>
-          <div class="conditions-price container">
-            <div class="menu-pricing">
-              <h4>
-                Pricing:
-              </h4>
-              <h5>
-                Brownies box of 6 : 350/- <br>
-                Brownies box of 12 : 600/-
-              </h5>
-            </div>
-            <!-- <p class="bases">
-            * 4 Cupcake bases available - Vanilla, Chocolate, Red Velvet, Hazelnut. 
-          </p> -->
+        <!-- Brownie Block End -->
+        <!-- Cupcake Block Start -->
+        <div class="cat-item gray-gradient">
+          <div class="cat-bg cat-cc-img"></div>
+          <div class="cat cat-title">
+            Cupcakes
+          </div>
+          <a href="#menu" class="cat-btn"> View Menu </a>
+        </div>
+        <!-- Cupcake Block End -->
 
+        <!-- B-Cake Block Start -->
+        <div class="cat-item gray-gradient">
+          <div class="cat-bg cat-bd-img"></div>
+          <div class="cat cat-title">
+            Cakes
+          </div>
+          <a href="#menu" class="cat-btn"> View Menu </a>
+        </div>
+        <!-- B-Cake Block End -->
+
+        <!-- Macroon Block Start -->
+        <div class="cat-item gray-gradient">
+          <div class="cat-bg cat-mc-img"></div>
+          <div class="cat cat-title">
+            Macroons
+          </div>
+          <a href="#menu" class="cat-btn"> View Menu </a>
+        </div>
+        <!-- Macroon Block End -->
+      </div>
+    </section>
+    <!-- Categories End -->
+
+    <!-- Counter Section Start -->
+
+    <section class="counter-bg" id="counter">
+      <div class="container counter-content-box">
+        <h1 class="text-center stat-headers text-white text-line">
+          Cakes Sold
+        </h1>
+        <div class="row stats">
+          <div class="col-lg-3 col-md-6 col-12 text-center stat-content">
+            <h2 class="stats_count text-white">67</h2>
+            <!-- TODO: add order_no col to database for keeping track of number -->
+            <h4 class="stat-text text-white">Brownies</h4>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 text-center stat-content">
+            <h2 class="stats_count text-white">73</h2>
+            <h4 class="stat-text text-white">Cakes</h4>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 text-center stat-content">
+            <h2 class="stats_count text-white">86</h2>
+            <h4 class="stat-text text-white">Cupcakes</h4>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 text-center stat-content">
+            <h2 class="stats_count text-white">22</h2>
+            <h4 class="stat-text text-white">Macroons</h4>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Menu Section Ends -->
+    <!-- Counter Section End -->
 
-  <!-- Footer Starts -->
-  <section id="footer">
-    <footer>
+    <!-- Menu Section Starts -->
+
+    <section id="menu">
       <div class="container">
-        <div class="row">
-          <div class="col-12 col-sm-6 col-md-6 center">
-            <!-- Start footer logo -->
-            <div class="footer_logo">
-              <a href="/">
-                <img src="./images/Brand/circle-cropped.png" alt="Whips N Whisks" />
-              </a>
-            </div>
-            <!-- End footer logo -->
-            <!-- Start Follow Us-->
-            <div class="social_button">
-              <a href="https://instagram.com/whipsnwhisks?utm_source=ig_profile_share&igshid=1193hwnhj76tu" target="_blank"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-facebook"></i></a>
-            </div>
-            <!-- End Follow Us-->
-            <!-- Start Copyright -->
-            <div class="copyright">&copy; 2019 <span>Jayanth Narla</span>. All Rights Reserved.</div>
-            <!-- Start End -->
+        <div class="" id="menu-list">
+          <div class="menu-nav" id="menu-nav">
+            <ul class="">
+              <li class="menu-item active">
+                <a class="text-center" id="brownies">Cakes</a>
+              </li>
+              <li class="menu-item">
+                <a class="text-center" id="cakes">Brownies</a>
+              </li>
+              <li class="menu-item">
+                <a class="text-center" id="cupcakes">Cupcakes</a>
+              </li>
+              <li class="menu-item">
+                <a class="text-center" id="macroons">Macroons</a>
+              </li>
+            </ul>
           </div>
-          <div class="col-12 col-sm-6 col-md-6">
-            <div class="footer_contact">
-              <!-- Start address-->
-              <div class="footer_contact_row">
-                <h5>Contact us</h5>
-                <div>
-                  <p><i class="fa fa-phone"></i>
-                   +91 1234328756 </p>
+          <div class="line"></div>
+          <div class="menu-contents page" id="brownies-content">
+            <ul class="menu-content">
+              <li class="menu-content-item">
+                <div class="menu-sec">
+                  <div class="conts">
+                    <h2>
+                      Oreo
+                    </h2>
+                    <span class="spacer"></span>
+                    <span class="price">
+                      Rs. 650*
+                    </span>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nesciunt deserunt minima praesentium blanditiis.
+                  </p>
                 </div>
-                <div>
-                  <p><i class="fa fa-envelope"></i>
-                  lorem@ipsum.com</p>
+              </li>
+              <li class="menu-content-item">
+                <div class="menu-sec">
+                  <div class="conts">
+                    <h2>
+                      Swiss meringue
+                    </h2>
+                    <span class="spacer"> </span>
+                    <span class="price">
+                      Rs. 650*
+                    </span>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nesciunt deserunt minima praesentium blanditiis.
+                  </p>
                 </div>
-                <div>
-                  <p><i class="fa fa-map-marker"></i>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </li>
+              <li class="menu-content-item">
+                <div class="menu-sec">
+                  <div class="conts">
+                    <h2>
+                      Choco ganache dark n white
+                    </h2>
+                    <span class="spacer"></span>
+                    <span class="price">
+                      Rs. 650*
+                    </span>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nesciunt deserunt minima praesentium blanditiis.
+                  </p>
                 </div>
+              </li>
+              <li class="menu-content-item">
+                <div class="menu-sec">
+                  <div class="conts">
+                    <h2>
+                      Vanilla buttercream
+                    </h2>
+                    <span class="spacer"></span>
+                    <span class="price">
+                      Rs. 650*
+                    </span>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nesciunt deserunt minima praesentium blanditiis.
+                  </p>
+                </div>
+              </li>
+              <li class="menu-content-item">
+                <div class="menu-sec">
+                  <div class="conts">
+                    <h2>
+                      Nutella buttercream
+                    </h2>
+                    <span class="spacer"></span>
+                    <span class="price">
+                      Rs. 650*
+                    </span>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nesciunt deserunt minima praesentium blanditiis.
+                  </p>
+                </div>
+              </li>
+              <li class="menu-content-item">
+                <div class="menu-sec">
+                  <div class="conts">
+                    <h2>
+                      Blueberry
+                    </h2>
+                    <span class="spacer"></span>
+                    <span class="price">
+                      Rs. 650*
+                    </span>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nesciunt deserunt minima praesentium blanditiis.
+                  </p>
+                </div>
+              </li>
+              <li class="menu-content-item">
+                <div class="menu-sec">
+                  <div class="conts">
+                    <h2>
+                      Peanut butter
+                    </h2>
+                    <span class="spacer"></span>
+                    <span class="price">
+                      Rs. 650*
+                    </span>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nesciunt deserunt minima praesentium blanditiis.
+                  </p>
+                </div>
+              </li>
+              <li class="menu-content-item">
+                <div class="menu-sec">
+                  <div class="conts">
+                    <h2>
+                      Cream cheese
+                    </h2>
+                    <span class="spacer"></span>
+                    <span class="price">
+                      Rs. 650*
+                    </span>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nesciunt deserunt minima praesentium blanditiis.
+                  </p>
+                </div>
+              </li>
+              <li class="menu-content-item">
+                <div class="menu-sec">
+                  <div class="conts">
+                    <h2>
+                      Lemon cream cheese
+                    </h2>
+                    <span class="spacer"></span>
+                    <span class="price">
+                      Rs. 650*
+                    </span>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nesciunt deserunt minima praesentium blanditiis.
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <div class="conditions-price container">
+              <p class="bases">
+                * 4 Cake bases available - Vanilla, Chocolate, Red Velvet,
+                Hazelnut.
+              </p>
+              <p>
+                * The mentioned price is for 500gm cakes. Price for 1Kg cake is
+                Rs. 1250.
+              </p>
+            </div>
+          </div>
+          <div class="menu-contents page hide" id="cakes-content">
+            <ul class="menu-content">
+              <li class="menu-content-item">
+                <div class="menu-sec">
+                  <div class="conts">
+                    <h2>
+                      Food Item Title Here
+                    </h2>
+                    <span class="spacer"></span>
+                    <span class="price">
+                      $ 14.95
+                    </span>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nesciunt deserunt minima praesentium blanditiis.
+                  </p>
+                </div>
+              </li>
+              <li class="menu-content-item">
+                <div class="menu-sec">
+                  <div class="conts">
+                    <h2>
+                      Food Item Title Here
+                    </h2>
+                    <span class="spacer"></span>
+                    <span class="price">
+                      $ 14.95
+                    </span>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nesciunt deserunt minima praesentium blanditiis.
+                  </p>
+                </div>
+              </li>
+              <li class="menu-content-item">
+                <div class="menu-sec">
+                  <div class="conts">
+                    <h2>
+                      Food Item Title Here
+                    </h2>
+                    <span class="spacer"></span>
+                    <span class="price">
+                      $ 14.95
+                    </span>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nesciunt deserunt minima praesentium blanditiis.
+                  </p>
+                </div>
+              </li>
+              <li class="menu-content-item">
+                <div class="menu-sec">
+                  <div class="conts">
+                    <h2>
+                      Food Item Title Here
+                    </h2>
+                    <span class="spacer"></span>
+                    <span class="price">
+                      $ 14.95
+                    </span>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nesciunt deserunt minima praesentium blanditiis.
+                  </p>
+                </div>
+              </li>
+              <li class="menu-content-item">
+                <div class="menu-sec">
+                  <div class="conts">
+                    <h2>
+                      Food Item Title Here
+                    </h2>
+                    <span class="spacer"></span>
+                    <span class="price">
+                      $ 14.95
+                    </span>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nesciunt deserunt minima praesentium blanditiis.
+                  </p>
+                </div>
+              </li>
+              <li class="menu-content-item">
+                <div class="menu-sec">
+                  <div class="conts">
+                    <h2>
+                      Food Item Title Here
+                    </h2>
+                    <span class="spacer"></span>
+                    <span class="price">
+                      $ 14.95
+                    </span>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nesciunt deserunt minima praesentium blanditiis.
+                  </p>
+                </div>
+              </li>
+              <li class="menu-content-item">
+                <div class="menu-sec">
+                  <div class="conts">
+                    <h2>
+                      Food Item Title Here
+                    </h2>
+                    <span class="spacer"></span>
+                    <span class="price">
+                      $ 14.95
+                    </span>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nesciunt deserunt minima praesentium blanditiis.
+                  </p>
+                </div>
+              </li>
+              <li class="menu-content-item">
+                <div class="menu-sec">
+                  <div class="conts">
+                    <h2>
+                      Food Item Title Here
+                    </h2>
+                    <span class="spacer"></span>
+                    <span class="price">
+                      $ 14.95
+                    </span>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nesciunt deserunt minima praesentium blanditiis.
+                  </p>
+                </div>
+              </li>
+              <li class="menu-content-item">
+                <div class="menu-sec">
+                  <div class="conts">
+                    <h2>
+                      Food Item Title Here
+                    </h2>
+                    <span class="spacer"></span>
+                    <span class="price">
+                      $ 14.95
+                    </span>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nesciunt deserunt minima praesentium blanditiis.
+                  </p>
+                </div>
+              </li>
+              <li class="menu-content-item">
+                <div class="menu-sec">
+                  <div class="conts">
+                    <h2>
+                      Food Item Title Here
+                    </h2>
+                    <span class="spacer"></span>
+                    <span class="price">
+                      $ 14.95
+                    </span>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nesciunt deserunt minima praesentium blanditiis.
+                  </p>
+                </div>
+              </li>
+              <li class="menu-content-item">
+                <div class="menu-sec">
+                  <div class="conts">
+                    <h2>
+                      Food Item Title Here
+                    </h2>
+                    <span class="spacer"></span>
+                    <span class="price">
+                      $ 14.95
+                    </span>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nesciunt deserunt minima praesentium blanditiis.
+                  </p>
+                </div>
+              </li>
+              <li class="menu-content-item">
+                <div class="menu-sec">
+                  <div class="conts">
+                    <h2>
+                      Food Item Title Here
+                    </h2>
+                    <span class="spacer"></span>
+                    <span class="price">
+                      $ 14.95
+                    </span>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nesciunt deserunt minima praesentium blanditiis.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-contents page hide" id="cupcakes-content">
+            <ul class="menu-content">
+              <li class="menu-content-item">
+                <div class="menu-sec">
+                  <div class="conts">
+                    <h2>
+                      Oreo
+                    </h2>
+                    <span class="spacer"></span>
+                    <!-- <span class='price'>
+                  Rs. 650*
+                </span> -->
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nesciunt deserunt minima praesentium blanditiis.
+                  </p>
+                </div>
+              </li>
+              <li class="menu-content-item">
+                <div class="menu-sec">
+                  <div class="conts">
+                    <h2>
+                      Swiss meringue
+                    </h2>
+                    <span class="spacer"></span>
+                    <!-- <span class='price'>
+                  Rs. 650*
+                </span> -->
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nesciunt deserunt minima praesentium blanditiis.
+                  </p>
+                </div>
+              </li>
+              <li class="menu-content-item">
+                <div class="menu-sec">
+                  <div class="conts">
+                    <h2>
+                      Choco ganache dark n white
+                    </h2>
+                    <span class="spacer"></span>
+                    <!-- <span class='price'>
+                  Rs. 650*
+                </span> -->
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nesciunt deserunt minima praesentium blanditiis.
+                  </p>
+                </div>
+              </li>
+              <li class="menu-content-item">
+                <div class="menu-sec">
+                  <div class="conts">
+                    <h2>
+                      Vanilla buttercream
+                    </h2>
+                    <span class="spacer"></span>
+                    <!-- <span class='price'>
+                  Rs. 650*
+                </span> -->
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nesciunt deserunt minima praesentium blanditiis.
+                  </p>
+                </div>
+              </li>
+              <li class="menu-content-item">
+                <div class="menu-sec">
+                  <div class="conts">
+                    <h2>
+                      Nutella buttercream
+                    </h2>
+                    <span class="spacer"></span>
+                    <!-- <span class='price'>
+                  Rs. 650*
+                </span> -->
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nesciunt deserunt minima praesentium blanditiis.
+                  </p>
+                </div>
+              </li>
+              <li class="menu-content-item">
+                <div class="menu-sec">
+                  <div class="conts">
+                    <h2>
+                      Blueberry
+                    </h2>
+                    <span class="spacer"></span>
+                    <!-- <span class='price'>
+                  Rs. 650*
+                </span> -->
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nesciunt deserunt minima praesentium blanditiis.
+                  </p>
+                </div>
+              </li>
+              <li class="menu-content-item">
+                <div class="menu-sec">
+                  <div class="conts">
+                    <h2>
+                      Peanut butter
+                    </h2>
+                    <span class="spacer"></span>
+                    <!-- <span class='price'>
+                  Rs. 650*
+                </span> -->
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nesciunt deserunt minima praesentium blanditiis.
+                  </p>
+                </div>
+              </li>
+              <li class="menu-content-item">
+                <div class="menu-sec">
+                  <div class="conts">
+                    <h2>
+                      Cream cheese
+                    </h2>
+                    <span class="spacer"></span>
+                    <!-- <span class='price'>
+                  Rs. 650*
+                </span> -->
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nesciunt deserunt minima praesentium blanditiis.
+                  </p>
+                </div>
+              </li>
+              <li class="menu-content-item">
+                <div class="menu-sec">
+                  <div class="conts">
+                    <h2>
+                      Lemon cream cheese
+                    </h2>
+                    <span class="spacer"></span>
+                    <!-- <span class='price'>
+                  Rs. 650*
+                </span> -->
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nesciunt deserunt minima praesentium blanditiis.
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <div class="conditions-price container">
+              <div class="menu-pricing">
+                <h4>
+                  Pricing:
+                </h4>
+                <h5>
+                  Brownies box of 6 : 350/- <br />
+                  Brownies box of 12 : 600/-
+                </h5>
               </div>
-              <!-- End address-->
+              <!-- <p class="bases">
+            * 4 Cupcake bases available - Vanilla, Chocolate, Red Velvet, Hazelnut. 
+          </p> -->
+            </div>
+          </div>
+          <div class="menu-contents page hide" id="macroons-content">
+            <ul class="menu-content">
+              <li class="menu-content-item">
+                <div class="menu-sec">
+                  <div class="conts">
+                    <h2>
+                      Pista
+                    </h2>
+                    <span class="spacer"></span>
+                    <!-- <span class='price'>
+                  Rs. 650*
+                </span> -->
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nesciunt deserunt minima praesentium blanditiis.
+                  </p>
+                </div>
+              </li>
+              <li class="menu-content-item">
+                <div class="menu-sec">
+                  <div class="conts">
+                    <h2>
+                      Chocolate
+                    </h2>
+                    <span class="spacer"></span>
+                    <!-- <span class='price'>
+                  Rs. 650*
+                </span> -->
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nesciunt deserunt minima praesentium blanditiis.
+                  </p>
+                </div>
+              </li>
+              <li class="menu-content-item">
+                <div class="menu-sec">
+                  <div class="conts">
+                    <h2>
+                      Blueberry
+                    </h2>
+                    <span class="spacer"></span>
+                    <!-- <span class='price'>
+                  Rs. 650*
+                </span> -->
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nesciunt deserunt minima praesentium blanditiis.
+                  </p>
+                </div>
+              </li>
+              <li class="menu-content-item">
+                <div class="menu-sec">
+                  <div class="conts">
+                    <h2>
+                      Dark chocolate
+                    </h2>
+                    <span class="spacer"></span>
+                    <!-- <span class='price'>
+                  Rs. 650*
+                </span> -->
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nesciunt deserunt minima praesentium blanditiis.
+                  </p>
+                </div>
+              </li>
+              <li class="menu-content-item">
+                <div class="menu-sec">
+                  <div class="conts">
+                    <h2>
+                      Paan
+                    </h2>
+                    <span class="spacer"></span>
+                    <!-- <span class='price'>
+                  Rs. 650*
+                </span> -->
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nesciunt deserunt minima praesentium blanditiis.
+                  </p>
+                </div>
+              </li>
+              <li class="menu-content-item">
+                <div class="menu-sec">
+                  <div class="conts">
+                    <h2>
+                      Tandaai
+                    </h2>
+                    <span class="spacer"></span>
+                    <!-- <span class='price'>
+                  Rs. 650*
+                </span> -->
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nesciunt deserunt minima praesentium blanditiis.
+                  </p>
+                </div>
+              </li>
+              <li class="menu-content-item">
+                <div class="menu-sec">
+                  <div class="conts">
+                    <h2>
+                      Mango
+                    </h2>
+                    <span class="spacer"></span>
+                    <!-- <span class='price'>
+                  Rs. 650*
+                </span> -->
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nesciunt deserunt minima praesentium blanditiis.
+                  </p>
+                </div>
+              </li>
+              <li class="menu-content-item">
+                <div class="menu-sec">
+                  <div class="conts">
+                    <h2>
+                      Swiss meringue
+                    </h2>
+                    <span class="spacer"></span>
+                    <!-- <span class='price'>
+                  Rs. 650*
+                </span> -->
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nesciunt deserunt minima praesentium blanditiis.
+                  </p>
+                </div>
+              </li>
+              <li class="menu-content-item">
+                <div class="menu-sec">
+                  <div class="conts">
+                    <h2>
+                      Vanilla
+                    </h2>
+                    <span class="spacer"></span>
+                    <!-- <span class='price'>
+                  Rs. 650*
+                </span> -->
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nesciunt deserunt minima praesentium blanditiis.
+                  </p>
+                </div>
+              </li>
+              <li class="menu-content-item">
+                <div class="menu-sec">
+                  <div class="conts">
+                    <h2>
+                      Strawberry
+                    </h2>
+                    <span class="spacer"></span>
+                    <!-- <span class='price'>
+                  Rs. 650*
+                </span> -->
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nesciunt deserunt minima praesentium blanditiis.
+                  </p>
+                </div>
+              </li>
+              <li class="menu-content-item">
+                <div class="menu-sec">
+                  <div class="conts">
+                    <h2>
+                      Raspberry
+                    </h2>
+                    <span class="spacer"></span>
+                    <!-- <span class='price'>
+                  Rs. 650*
+                </span> -->
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nesciunt deserunt minima praesentium blanditiis.
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <div class="conditions-price container">
+              <div class="menu-pricing">
+                <h4>
+                  Pricing:
+                </h4>
+                <h5>
+                  Brownies box of 6 : 350/- <br />
+                  Brownies box of 12 : 600/-
+                </h5>
+              </div>
+              <!-- <p class="bases">
+            * 4 Cupcake bases available - Vanilla, Chocolate, Red Velvet, Hazelnut. 
+          </p> -->
             </div>
           </div>
         </div>
       </div>
-    </footer>
-  </section>
-  <!-- Footer End -->
+    </section>
 
-  <!-- Go to Top Button starts -->
+    <!-- Menu Section Ends -->
 
-  <button onclick="topFunction()" id="btn-top">
-    <i class="fas fa-chevron-up" id="#uparrow"></i>
-    Back to Top
-  </button>
+    <!-- Footer Starts -->
+    <section id="footer">
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-6 center">
+              <!-- Start footer logo -->
+              <div class="footer_logo">
+                <a href="/">
+                  <img
+                    src="./images/Brand/circle-cropped.png"
+                    alt="Whips N Whisks"
+                  />
+                </a>
+              </div>
+              <!-- End footer logo -->
+              <!-- Start Follow Us-->
+              <div class="social_button">
+                <a
+                  href="https://instagram.com/whipsnwhisks?utm_source=ig_profile_share&igshid=1193hwnhj76tu"
+                  target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+              </div>
+              <!-- End Follow Us-->
+              <!-- Start Copyright -->
+              <div class="copyright">
+                &copy; 2019 <span>Jayanth Narla</span>. All Rights Reserved.
+              </div>
+              <!-- Start End -->
+            </div>
+            <div class="col-12 col-sm-6 col-md-6">
+              <div class="footer_contact">
+                <!-- Start address-->
+                <div class="footer_contact_row">
+                  <h5>Contact us</h5>
+                  <div>
+                    <p><i class="fa fa-phone"></i> +91 1234328756</p>
+                  </div>
+                  <div>
+                    <p><i class="fa fa-envelope"></i> lorem@ipsum.com</p>
+                  </div>
+                  <div>
+                    <p>
+                      <i class="fa fa-map-marker"></i> Lorem ipsum dolor sit
+                      amet consectetur adipisicing elit.
+                    </p>
+                  </div>
+                </div>
+                <!-- End address-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <!-- Footer End -->
 
+    <!-- Go to Top Button starts -->
 
-  <!-- Go to Top Button ends -->
-  <!-- Moving Letters Script Starts -->
-  <script>
+    <button onclick="topFunction()" id="btn-top">
+      <i class="fas fa-chevron-up" id="#uparrow"></i>
+      Back to Top
+    </button>
+
+    <!-- Go to Top Button ends -->
+    <!-- Moving Letters Script Starts -->
+    <!-- <script>
     // script for ml15
     anime.timeline({
         loop: true
@@ -1055,100 +1077,119 @@
         easing: "easeOutExpo",
         delay: 1000
       });
-  </script>
+  </script> -->
 
-  <!-- Moving Letters Script Ends -->
+    <!-- Moving Letters Script Ends -->
 
-  <!-- nav change scroll script start -->
-  <script>
-    $(window).scroll(function () {
-      $('nav').toggleClass('scrolled', $(this).scrollTop() > 580);
-    });
-  </script>
-  <!-- nav change scroll script end -->
-  <!-- counter Script start -->
-  <script>
-    var statSection = $(".stats"),
-      stats = $(".stats_count");
-    statSection.waypoint({
-      handler: function (direction) {
-        if (direction === "down") {
-          stats.each(function () {
-            var $this = $(this);
-            $({
-              Counter: 0
-            }).animate({
-              Counter: $this.text()
-            }, {
-              duration: 3000,
-              easing: 'swing',
-              step: function (curValue) {
-                $this.text(Math.ceil(curValue));
-              }
+    <!-- nav change scroll script start -->
+    <script>
+      $(window).scroll(function() {
+        $("nav").toggleClass("scrolled", $(this).scrollTop() > 580);
+      });
+    </script>
+    <!-- nav change scroll script end -->
+    <!-- counter Script start -->
+    <script>
+      var statSection = $(".stats"),
+        stats = $(".stats_count");
+      statSection.waypoint({
+        handler: function(direction) {
+          if (direction === "down") {
+            stats.each(function() {
+              var $this = $(this);
+              $({
+                Counter: 0
+              }).animate(
+                {
+                  Counter: $this.text()
+                },
+                {
+                  duration: 3000,
+                  easing: "swing",
+                  step: function(curValue) {
+                    $this.text(Math.ceil(curValue));
+                  }
+                }
+              );
             });
-          });
+          }
+          // trigger once only
+          this.destroy();
+        },
+        offset: "85%"
+      });
+    </script>
+    <!-- counter Script end -->
+    <!-- Back to Top Script starts -->
+    <script>
+      window.onscroll = function() {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 180 ||
+          document.documentElement.scrollTop > 180
+        ) {
+          document.getElementById("btn-top").style.display = "block";
+        } else {
+          document.getElementById("btn-top").style.display = "none";
         }
-        // trigger once only
-        this.destroy();
-      },
-      offset: "85%"
-    });
-  </script>
-  <!-- counter Script end -->
-  <!-- Back to Top Script starts -->
-  <script>
-    window.onscroll = function () {
-      scrollFunction()
-    };
-
-    function scrollFunction() {
-      if (document.body.scrollTop > 180 || document.documentElement.scrollTop > 180) {
-        document.getElementById("btn-top").style.display = "block";
-      } else {
-        document.getElementById("btn-top").style.display = "none";
       }
-    }
 
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-  </script>
-  <!-- Back to Top Script ends -->
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <!-- Back to Top Script ends -->
 
-  <!-- Menu onclick start -->
-  <script>
-    $(document).ready(function () {
-      $("#brownies").on('click', function () {
-        $("#menu-list .page:not('.hide')").stop().fadeOut('medium', function () {
-          $(this).addClass('hide');
-          $('#brownies-content').fadeIn('slow').removeClass('hide');
+    <!-- Menu onclick start -->
+    <script>
+      $(document).ready(function() {
+        $("#brownies").on("click", function() {
+          $("#menu-list .page:not('.hide')")
+            .stop()
+            .fadeOut("medium", function() {
+              $(this).addClass("hide");
+              $("#brownies-content")
+                .fadeIn("slow")
+                .removeClass("hide");
+            });
+        });
+        $("#cakes").on("click", function() {
+          $("#menu-list .page:not('.hide')")
+            .stop()
+            .fadeOut("medium", function() {
+              $(this).addClass("hide");
+              $("#cakes-content")
+                .fadeIn("slow")
+                .removeClass("hide");
+            });
+        });
+        $("#cupcakes").on("click", function() {
+          $("#menu-list .page:not('.hide')")
+            .stop()
+            .fadeOut("medium", function() {
+              $(this).addClass("hide");
+              $("#cupcakes-content")
+                .fadeIn("slow")
+                .removeClass("hide");
+            });
+        });
+        $("#macroons").on("click", function() {
+          $("#menu-list .page:not('.hide')")
+            .stop()
+            .fadeOut("medium", function() {
+              $(this).addClass("hide");
+              $("#macroons-content")
+                .fadeIn("slow")
+                .removeClass("hide");
+            });
         });
       });
-      $("#cakes").on('click', function () {
-        $("#menu-list .page:not('.hide')").stop().fadeOut('medium', function () {
-          $(this).addClass('hide');
-          $('#cakes-content').fadeIn('slow').removeClass('hide');
-        });
-      });
-      $("#cupcakes").on('click', function () {
-        $("#menu-list .page:not('.hide')").stop().fadeOut('medium', function () {
-          $(this).addClass('hide');
-          $('#cupcakes-content').fadeIn('slow').removeClass('hide');
-        });
-      });
-      $("#macroons").on('click', function () {
-        $("#menu-list .page:not('.hide')").stop().fadeOut('medium', function () {
-          $(this).addClass('hide');
-          $('#macroons-content').fadeIn('slow').removeClass('hide');
-        });
-      });
-    });
-  </script>
-  <!-- Menu onclick end -->
-
-
-</body>
-
+    </script>
+    <!-- Menu onclick end -->
+  </body>
 </html>

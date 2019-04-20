@@ -26,7 +26,7 @@
   }
 
   &.scrolled {
-    background: rgba(0, 0, 0, 0.5) !important;
+    background: rgba(0, 0, 0, 0.6) !important;
   }
 }
 
@@ -81,7 +81,7 @@
 
 /* Home Image Styling Starts */
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
     url("../images/Carousel/1.jpg");
   height: 100vh;
   width: 100%;
@@ -91,7 +91,6 @@ header {
   background-size: cover;
   -webkit-background-size: cover;
 }
-
 /* Home Image Styling ends */
 
 /* Moving Letters Styling Starts */
@@ -112,9 +111,9 @@ header {
 
   .line {
     position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
+    // left: 0;
+    // top: 0;
+    // bottom: 0;
     margin: auto;
     height: 3px;
     width: 100%;
@@ -123,7 +122,8 @@ header {
   }
 
   .ampersand {
-    font-family: Baskerville, "EB Garamond", serif;
+    // font-family: Baskerville, "EB Garamond", serif;
+    font-family: "Cinzel", serif;
     font-style: italic;
     font-weight: 400;
     width: 1em;
@@ -133,14 +133,10 @@ header {
 
   .letters {
     display: inline-block;
-    opacity: 0;
-  }
-}
 
-.ml2 {
-  font-weight: 300;
-  font-size: 3em;
-  color: #fff;
+    font-family: "Cinzel", serif;
+    opacity: 1;
+  }
 }
 
 .main-content {
