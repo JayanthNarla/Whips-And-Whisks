@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
@@ -80,8 +80,16 @@
 /* Navbar Styling Ends */
 /* Home Image Styling Starts */
 header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url("../images/Carousel/1.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/Carousel/1.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.65)),
+      to(rgba(0, 0, 0, 0.65))
+    ),
+    url("../images/Carousel/1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("../images/Carousel/1.jpg");
   height: 100vh;
   width: 100%;
   min-height: 300px;
@@ -115,8 +123,6 @@ header {
   height: 3px;
   width: 100%;
   background-color: #fff;
-  -webkit-transform-origin: 0.5 0;
-          transform-origin: 0.5 0;
 }
 
 .ml5 .ampersand {
@@ -157,7 +163,7 @@ header {
   background-position: center;
   background-size: cover;
   -webkit-transform-origin: bottom;
-          transform-origin: bottom;
+  transform-origin: bottom;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -169,7 +175,13 @@ header {
   top: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(120%, black));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(transparent),
+    color-stop(120%, black)
+  );
   background: linear-gradient(to bottom, transparent 0%, black 120%);
   -webkit-transition: opacity 420ms ease-in-out;
   transition: opacity 420ms ease-in-out;
@@ -181,23 +193,55 @@ header {
 }
 
 .cat-br-img {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/Categories/brownies.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Categories/brownies.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.5)),
+      to(rgba(0, 0, 0, 0.5))
+    ),
+    url("../images/Categories/brownies.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/Categories/brownies.jpg");
 }
 
 .cat-cc-img {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.65))), url("../images/Categories/cupcakes.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.65)), url("../images/Categories/cupcakes.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.5)),
+      to(rgba(0, 0, 0, 0.65))
+    ),
+    url("../images/Categories/cupcakes.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.65)),
+    url("../images/Categories/cupcakes.jpg");
 }
 
 .cat-bd-img {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/Categories/bday_cake.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Categories/bday_cake.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.5)),
+      to(rgba(0, 0, 0, 0.5))
+    ),
+    url("../images/Categories/bday_cake.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/Categories/bday_cake.jpg");
 }
 
 .cat-mc-img {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/Categories/macroons.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Categories/macroons.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.5)),
+      to(rgba(0, 0, 0, 0.5))
+    ),
+    url("../images/Categories/macroons.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/Categories/macroons.jpg");
 }
 
 .cat-title {
@@ -205,7 +249,7 @@ header {
   top: 35%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   font-size: 4em;
   font-family: "Cookie", cursive;
   border-bottom: 6px solid #ff8040;
@@ -217,7 +261,7 @@ header {
   top: 67%;
   left: 50%;
   -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  transform: translate(-50%);
   font-size: 14px;
   font-weight: 700;
   margin-top: 30px;
@@ -254,8 +298,16 @@ header {
 }
 
 .counter-bg {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../images/Carousel/3.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/Carousel/3.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.7)),
+      to(rgba(0, 0, 0, 0.7))
+    ),
+    url("../images/Carousel/3.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/Carousel/3.jpg");
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -325,8 +377,16 @@ header {
 #menu {
   padding-top: 20vh;
   height: 190vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../images/menu/bg.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/menu/bg.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.7)),
+      to(rgba(0, 0, 0, 0.7))
+    ),
+    url("../images/menu/bg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/menu/bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -342,7 +402,14 @@ header {
 
 #menu #menu-list {
   min-height: 150vh;
-  background: -webkit-gradient(linear, left top, right top, from(#c5c5c5), color-stop(white), to(#c5c5c5));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#c5c5c5),
+    color-stop(white),
+    to(#c5c5c5)
+  );
   background: linear-gradient(to right, #c5c5c5, white, #c5c5c5);
   position: relative;
   /* menu section styling ends */
@@ -362,11 +429,11 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   padding: 15px 0px;
 }
 
@@ -378,34 +445,46 @@ header {
   cursor: pointer;
 }
 
-#brownies-content, #cakes-content, #cupcakes-content, #macroons-content {
+#brownies-content,
+#cakes-content,
+#cupcakes-content,
+#macroons-content {
   padding: 20px;
   width: 80%;
   max-width: 1100px;
   margin: 50px auto;
 }
 
-#brownies-content h2, #cakes-content h2, #cupcakes-content h2, #macroons-content h2 {
+#brownies-content h2,
+#cakes-content h2,
+#cupcakes-content h2,
+#macroons-content h2 {
   margin: 0;
   font-size: 1.2rem;
   color: #000;
   text-transform: uppercase;
 }
 
-#brownies-content .menu-content, #cakes-content .menu-content, #cupcakes-content .menu-content, #macroons-content .menu-content {
+#brownies-content .menu-content,
+#cakes-content .menu-content,
+#cupcakes-content .menu-content,
+#macroons-content .menu-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style-type: none;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0 auto;
   max-width: 960px;
   height: 100%;
 }
 
-#brownies-content .menu-content .menu-content-item, #cakes-content .menu-content .menu-content-item, #cupcakes-content .menu-content .menu-content-item, #macroons-content .menu-content .menu-content-item {
+#brownies-content .menu-content .menu-content-item,
+#cakes-content .menu-content .menu-content-item,
+#cupcakes-content .menu-content .menu-content-item,
+#macroons-content .menu-content .menu-content-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -416,41 +495,50 @@ header {
   color: #000;
 }
 
-#brownies-content .menu-content .menu-content-item .menu-sec, #cakes-content .menu-content .menu-content-item .menu-sec, #cupcakes-content .menu-content .menu-content-item .menu-sec, #macroons-content .menu-content .menu-content-item .menu-sec {
+#brownies-content .menu-content .menu-content-item .menu-sec,
+#cakes-content .menu-content .menu-content-item .menu-sec,
+#cupcakes-content .menu-content .menu-content-item .menu-sec,
+#macroons-content .menu-content .menu-content-item .menu-sec {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
-#brownies-content .menu-content .menu-content-item .menu-sec .conts, #cakes-content .menu-content .menu-content-item .menu-sec .conts, #cupcakes-content .menu-content .menu-content-item .menu-sec .conts, #macroons-content .menu-content .menu-content-item .menu-sec .conts {
+#brownies-content .menu-content .menu-content-item .menu-sec .conts,
+#cakes-content .menu-content .menu-content-item .menu-sec .conts,
+#cupcakes-content .menu-content .menu-content-item .menu-sec .conts,
+#macroons-content .menu-content .menu-content-item .menu-sec .conts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-#brownies-content .menu-content .menu-content-item .menu-sec .conts .spacer, #cakes-content .menu-content .menu-content-item .menu-sec .conts .spacer, #cupcakes-content .menu-content .menu-content-item .menu-sec .conts .spacer, #macroons-content .menu-content .menu-content-item .menu-sec .conts .spacer {
+#brownies-content .menu-content .menu-content-item .menu-sec .conts .spacer,
+#cakes-content .menu-content .menu-content-item .menu-sec .conts .spacer,
+#cupcakes-content .menu-content .menu-content-item .menu-sec .conts .spacer,
+#macroons-content .menu-content .menu-content-item .menu-sec .conts .spacer {
   content: "";
   width: 100%;
   height: 0.75em;
   margin: 0 0.5rem;
   border-bottom: 2px dotted #999;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .hide {
@@ -471,8 +559,17 @@ header {
   font-size: 1.2rem;
 }
 
-#brownies:hover, #cakes:hover, #cupcakes:hover, #macroons:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff512f), to(#f09819));
+#brownies:hover,
+#cakes:hover,
+#cupcakes:hover,
+#macroons:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ff512f),
+    to(#f09819)
+  );
   background: linear-gradient(to bottom, #ff512f, #f09819);
   background-clip: text;
   -webkit-text-fill-color: transparent;
