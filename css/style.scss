@@ -34,10 +34,10 @@
   text-transform: uppercase;
 }
 
-.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .active>.nav-link,
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .show > .nav-link {
+.navbar-light .navbar-nav .show>.nav-link {
   color: #fff;
   /* insert fav color*/
 }
@@ -91,6 +91,7 @@ header {
   background-size: cover;
   -webkit-background-size: cover;
 }
+
 /* Home Image Styling ends */
 
 /* Moving Letters Styling Starts */
@@ -237,6 +238,7 @@ header {
 #section2 {
   width: 100%;
   overflow: hidden;
+
   a {
     text-decoration: none;
   }
@@ -332,21 +334,26 @@ header {
   background-position: center;
   background-size: cover;
   position: relative;
+
   .line {
     margin: 3rem auto;
     height: 0.5rem;
     width: 8rem;
     background-color: #ff8040;
   }
+
   #menu-list {
     min-height: 150vh;
     background: linear-gradient(to right, #c5c5c5, white, #c5c5c5);
     position: relative;
+
     .page {
       margin-top: 3rem;
     }
+
     #menu-nav {
       padding-top: 7rem;
+
       ul {
         list-style: none;
         display: flex;
@@ -354,6 +361,7 @@ header {
         justify-content: space-evenly;
         padding: 15px 0px;
       }
+
       a {
         color: #000;
         font-size: 2rem;
@@ -362,20 +370,24 @@ header {
         cursor: pointer;
       }
     }
+
     /* menu section styling ends */
   }
 }
+
 #brownies-content {
   padding: 20px;
   width: 80%;
   max-width: 1100px;
   margin: 50px auto;
+
   h2 {
     margin: 0;
     font-size: 1.2rem;
     color: #000;
     text-transform: uppercase;
   }
+
   .menu-content {
     display: flex;
     list-style-type: none;
@@ -384,6 +396,7 @@ header {
     margin: 0 auto;
     max-width: 960px;
     height: 100%;
+
     .menu-content-item {
       display: flex;
       width: 50%;
@@ -416,29 +429,37 @@ header {
     }
   }
 }
+
 #cakes-content {
   @extend #brownies-content;
 }
+
 #cupcakes-content {
   @extend #cakes-content;
 }
+
 #macroons-content {
   @extend #cakes-content;
 }
+
 .hide {
   display: none;
 }
+
 .conditions-price {
   margin-top: 5vh;
   bottom: 1rem;
   font-size: 1rem !important;
+
   .menu-pricing {
     padding-bottom: 5vh;
   }
+
   .bases {
     font-size: 1.2rem;
   }
 }
+
 #brownies {
   &:hover {
     background: linear-gradient(to bottom, #ff512f, #f09819);
@@ -447,15 +468,19 @@ header {
     -webkit-background-clip: text;
   }
 }
+
 #cakes {
   @extend #brownies;
 }
+
 #cupcakes {
   @extend #brownies;
 }
+
 #macroons {
   @extend #brownies;
 }
+
 // Footer styling Starts
 
 footer {
@@ -468,12 +493,15 @@ footer {
   width: 100%;
   bottom: 0;
   max-width: 1920px;
+
   .center {
     text-align: center;
   }
+
   .footer_logo {
     margin-bottom: 20px;
   }
+
   a {
     color: #333;
     font-size: 14px;
@@ -487,10 +515,12 @@ footer {
       max-width: 100%;
     }
   }
+
   .social_button {
     font-size: 0;
     margin-bottom: 20px;
     padding-top: 10px;
+
     a {
       padding: 5px 22px 5px 26px;
       border: 1.15px solid rgba(51, 51, 51, 0.5);
@@ -501,26 +531,32 @@ footer {
       text-decoration: none;
       outline: none;
       transition: 500ms;
+
       &:hover {
         background-color: #ff8040;
         color: #fff;
       }
     }
   }
+
   .copyright {
     text-align: center;
     font-weight: 500;
   }
+
   .footer_contact {
     margin-top: 7.5vh;
     text-align: right;
+
     .footer_contact_row {
       margin-bottom: 38px;
+
       p {
         font-size: 1rem;
         margin: 5px 0;
       }
     }
+
     h5 {
       text-align: right;
       margin-bottom: 20px;
@@ -529,10 +565,12 @@ footer {
       font-size: 2.2rem;
       text-transform: uppercase;
     }
+
     div {
       margin-bottom: 3px;
     }
   }
+
   span {
     font-size: 1.2rem;
     font-weight: 600;

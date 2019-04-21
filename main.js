@@ -1,5 +1,5 @@
 // <!-- nav change scroll script start -->
-$(window).scroll(function() {
+$(window).scroll(function () {
   $("nav").toggleClass("scrolled", $(this).scrollTop() > 580);
 });
 // <!-- nav change scroll script end -->
@@ -8,24 +8,21 @@ $(window).scroll(function() {
 var statSection = $(".stats"),
   stats = $(".stats_count");
 statSection.waypoint({
-  handler: function(direction) {
+  handler: function (direction) {
     if (direction === "down") {
-      stats.each(function() {
+      stats.each(function () {
         var $this = $(this);
         $({
           Counter: 0
-        }).animate(
-          {
-            Counter: $this.text()
-          },
-          {
-            duration: 3000,
-            easing: "swing",
-            step: function(curValue) {
-              $this.text(Math.ceil(curValue));
-            }
+        }).animate({
+          Counter: $this.text()
+        }, {
+          duration: 3000,
+          easing: "swing",
+          step: function (curValue) {
+            $this.text(Math.ceil(curValue));
           }
-        );
+        });
       });
     }
     // trigger once only
@@ -36,7 +33,7 @@ statSection.waypoint({
 // <!-- counter Script end -->
 
 // <!-- Back to Top Script starts -->
-window.onscroll = function() {
+window.onscroll = function () {
   scrollFunction();
 };
 
@@ -50,6 +47,7 @@ function scrollFunction() {
     document.getElementById("btn-top").style.display = "none";
   }
 }
+
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
@@ -57,41 +55,41 @@ function topFunction() {
 // <!-- Back to Top Script ends -->
 
 // <!-- Menu onclick start -->
-$(document).ready(function() {
-  $("#brownies").on("click", function() {
+$(document).ready(function () {
+  $("#brownies").on("click", function () {
     $("#menu-list .page:not('.hide')")
       .stop()
-      .fadeOut("medium", function() {
+      .fadeOut("medium", function () {
         $(this).addClass("hide");
         $("#brownies-content")
           .fadeIn("slow")
           .removeClass("hide");
       });
   });
-  $("#cakes").on("click", function() {
+  $("#cakes").on("click", function () {
     $("#menu-list .page:not('.hide')")
       .stop()
-      .fadeOut("medium", function() {
+      .fadeOut("medium", function () {
         $(this).addClass("hide");
         $("#cakes-content")
           .fadeIn("slow")
           .removeClass("hide");
       });
   });
-  $("#cupcakes").on("click", function() {
+  $("#cupcakes").on("click", function () {
     $("#menu-list .page:not('.hide')")
       .stop()
-      .fadeOut("medium", function() {
+      .fadeOut("medium", function () {
         $(this).addClass("hide");
         $("#cupcakes-content")
           .fadeIn("slow")
           .removeClass("hide");
       });
   });
-  $("#macroons").on("click", function() {
+  $("#macroons").on("click", function () {
     $("#menu-list .page:not('.hide')")
       .stop()
-      .fadeOut("medium", function() {
+      .fadeOut("medium", function () {
         $(this).addClass("hide");
         $("#macroons-content")
           .fadeIn("slow")
