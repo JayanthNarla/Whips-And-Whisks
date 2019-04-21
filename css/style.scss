@@ -82,7 +82,7 @@
 /* Home Image Styling Starts */
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    url("../images/Carousel/1.jpg");
+    url("../images/Carousel/1-min.jpg");
   height: 100vh;
   width: 100%;
   min-height: 300px;
@@ -184,22 +184,22 @@ header {
 
 .cat-br-img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/Categories/brownies.jpg");
+    url("../images/Categories/brownies-min.jpg");
 }
 
 .cat-cc-img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.65)),
-    url("../images/Categories/cupcakes.jpg");
+    url("../images/Categories/cupcakes-min.jpg");
 }
 
 .cat-bd-img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/Categories/bday_cake.jpg");
+    url("../images/Categories/bday_cake-min.jpg");
 }
 
 .cat-mc-img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/Categories/macroons.jpg");
+    url("../images/Categories/macroons-min.jpg");
 }
 
 .cat-title {
@@ -221,7 +221,7 @@ header {
   font-size: 14px;
   font-weight: 700;
   margin-top: 30px;
-  padding: 20px;
+  padding: 1.1em;
   border: 2px white solid;
   background: rgba(0, 0, 0, 0.4);
   color: #fff;
@@ -256,7 +256,7 @@ header {
 
 .counter-bg {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../images/Carousel/3.jpg");
+    url("../images/Carousel/3-min.jpg");
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -329,7 +329,7 @@ header {
   padding-top: 20vh;
   height: 190vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../images/menu/bg.jpg");
+    url("../images/menu/bg-min.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
